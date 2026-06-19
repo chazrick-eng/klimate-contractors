@@ -1,0 +1,1550 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Klimate Contractors Limited — Jamaica's Premier HVAC, Refrigeration & Cold Storage Provider</title>
+<meta name="description" content="Jamaica's top provider of air conditioning sales, repair and installation. Commercial AC, residential AC, VRF systems, cold storage, water heaters, fans and water pumps. Discovery Bay, St. Ann." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Archivo:wght@500;600;700;800;900&family=Archivo:ital,wght@1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* Brand */
+    --blue-900:#0a2c5c;
+    --blue-800:#0d3a7a;
+    --blue-700:#0f4ea8;
+    --blue:#1268d4;        /* primary */
+    --blue-500:#1f7be8;
+    --blue-300:#7fb5f0;
+    --blue-50:#eaf3fc;
+    --sun:#f5b73d;
+    --sun-600:#e09b1f;
+    --ink:#0c1424;
+    --ink-2:#1d2738;
+    --muted:#5a6473;
+    --line:#e3e8ef;
+    --bg:#ffffff;
+    --bg-2:#f5f7fb;
+    --bg-pedestal:#eef2f7;
+    --shadow-sm:0 1px 2px rgba(15,40,90,.06), 0 2px 6px rgba(15,40,90,.04);
+    --shadow:0 6px 24px rgba(15,40,90,.08), 0 1px 3px rgba(15,40,90,.05);
+    --shadow-lg:0 24px 60px rgba(15,40,90,.18), 0 4px 12px rgba(15,40,90,.08);
+    --radius:14px;
+    --radius-lg:22px;
+    --maxw:1280px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Manrope',system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    line-height:1.55;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+  h1,h2,h3,h4{font-family:'Archivo',sans-serif;letter-spacing:-.02em;line-height:1.05;margin:0}
+  h1{font-weight:900;font-size:clamp(40px,5.6vw,76px)}
+  h2{font-weight:800;font-size:clamp(30px,3.6vw,48px)}
+  h3{font-weight:700;font-size:clamp(20px,1.6vw,24px)}
+  p{margin:0}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'Archivo',sans-serif;font-weight:700;
+    font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--blue-700);
+  }
+  .eyebrow::before{content:"";width:22px;height:2px;background:var(--blue);border-radius:2px}
+
+  /* ───────── Topbar ───────── */
+  .topbar{
+    background:var(--ink);color:#cdd6e3;font-size:13px;
+    border-bottom:1px solid #1a2436;
+  }
+  .topbar .row{display:flex;align-items:center;justify-content:space-between;gap:24px;height:38px}
+  .topbar a{color:#cdd6e3;display:inline-flex;align-items:center;gap:8px}
+  .topbar a:hover{color:#fff}
+  .topbar .left,.topbar .right{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+  .topbar .pill{
+    background:var(--sun);color:#3a2400;padding:4px 10px;border-radius:999px;
+    font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+  }
+  @media (max-width:760px){
+    .topbar .right .hide-sm{display:none}
+  }
+
+  .klimate-logo{display:inline-flex;align-items:center;gap:10px}
+  .klimate-mark{width:42px;height:42px;flex-shrink:0;object-fit:contain}
+  .klimate-lockup{height:80px;width:auto;display:block}
+  @media (max-width:760px){.klimate-lockup{height:54px}}
+  .klimate-wordmark{
+    font-family:'Archivo',sans-serif;font-style:italic;font-weight:900;
+    font-size:24px;color:var(--blue-700);line-height:1;letter-spacing:-.01em;
+  }
+  .klimate-wordmark sup{font-size:9px;vertical-align:super;font-weight:700}
+  .klimate-tagline{
+    display:block;font-family:'Archivo',sans-serif;font-style:normal;font-weight:700;
+    font-size:9px;letter-spacing:.32em;color:#5a6473;margin-top:3px;
+  }
+
+  /* ───────── Nav ───────── */
+  header.nav{
+    position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);
+    backdrop-filter:saturate(180%) blur(14px);
+    -webkit-backdrop-filter:saturate(180%) blur(14px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav .row{display:flex;align-items:center;gap:32px;height:112px}
+  .nav nav{display:flex;align-items:center;gap:6px;margin-left:auto}
+  .nav nav a{
+    padding:10px 14px;border-radius:10px;font-weight:600;font-size:14.5px;color:var(--ink-2);
+    transition:background .18s, color .18s;
+  }
+  .nav nav a:hover{background:var(--blue-50);color:var(--blue-700)}
+  .nav .cta{
+    background:var(--ink);color:#fff;padding:11px 18px;border-radius:999px;
+    font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:8px;
+    transition:transform .15s, background .2s;
+  }
+  .nav .cta:hover{background:var(--blue-700);transform:translateY(-1px)}
+  .nav .menu-btn{display:none;width:42px;height:42px;border-radius:10px;border:1px solid var(--line);align-items:center;justify-content:center}
+  @media (max-width:980px){
+    .nav nav{display:none}
+    .nav .menu-btn{display:inline-flex}
+  }
+
+  /* ───────── Hero ───────── */
+  .hero{
+    position:relative;overflow:hidden;
+    background:
+      radial-gradient(1200px 600px at 85% -10%, rgba(245,183,61,.18), transparent 60%),
+      radial-gradient(1000px 700px at -10% 110%, rgba(18,104,212,.18), transparent 55%),
+      linear-gradient(180deg,#fafcff 0%, #eef3fa 100%);
+    padding:64px 0 80px;
+  }
+  .hero .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+  .hero h1{margin-top:18px}
+  .hero h1 .accent{
+    background:linear-gradient(90deg, var(--blue-700) 0%, var(--blue-500) 60%, var(--sun) 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero .lede{font-size:18px;color:var(--muted);margin-top:18px;max-width:560px}
+  .hero .ctas{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;
+    font-weight:700;font-size:15px;transition:transform .15s, box-shadow .2s, background .2s;
+  }
+  .btn-primary{background:var(--blue);color:#fff;box-shadow:0 8px 24px rgba(18,104,212,.32)}
+  .btn-primary:hover{background:var(--blue-700);transform:translateY(-1px)}
+  .btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+  .btn-ghost:hover{border-color:var(--blue);color:var(--blue-700)}
+  .hero .meta{display:flex;gap:36px;margin-top:36px;flex-wrap:wrap}
+  .hero .meta div{font-size:13px;color:var(--muted)}
+  .hero .meta strong{display:block;font-family:'Archivo',sans-serif;font-size:28px;color:var(--ink);font-weight:800;letter-spacing:-.02em}
+
+  /* Hero visual: split hot/cold panel */
+  .hero-visual{
+    position:relative;aspect-ratio:1/1.05;border-radius:28px;overflow:hidden;
+    box-shadow:var(--shadow-lg);
+    background:#fff;
+  }
+  .hero-visual .split{position:absolute;inset:0;display:grid;grid-template-rows:1fr 1fr}
+  .hero-visual .hot{
+    background:
+      radial-gradient(120% 80% at 70% 20%, #ffd47a 0%, var(--sun) 35%, #d97e10 100%);
+    position:relative;overflow:hidden;
+  }
+  .hero-visual .cold{
+    background:
+      radial-gradient(120% 80% at 30% 80%, #6db8ff 0%, var(--blue) 40%, var(--blue-900) 100%);
+    position:relative;overflow:hidden;
+  }
+  .hero-visual .label{
+    position:absolute;font-family:'Archivo',sans-serif;font-weight:800;
+    font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:#fff;
+    background:rgba(0,0,0,.18);padding:6px 12px;border-radius:999px;backdrop-filter:blur(8px);
+  }
+  .hero-visual .hot .label{top:24px;left:24px;color:#3a2400;background:rgba(255,255,255,.55)}
+  .hero-visual .cold .label{bottom:24px;right:24px}
+  .hero-visual .center{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    pointer-events:none;
+  }
+  .hero-visual .ring{
+    width:62%;aspect-ratio:1;border-radius:50%;
+    background:rgba(255,255,255,.95);
+    box-shadow:0 30px 80px rgba(10,30,80,.35), inset 0 0 0 1px rgba(0,0,0,.04);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .hero-visual .ring svg{width:62%;height:62%}
+  .hero-visual .floating{
+    position:absolute;background:#fff;border-radius:14px;padding:12px 14px;
+    box-shadow:var(--shadow);font-size:13px;display:flex;align-items:center;gap:10px;
+  }
+  .hero-visual .floating b{font-family:'Archivo',sans-serif;font-weight:800}
+  .hero-visual .float-1{top:18%;right:-14px;transform:translateX(0)}
+  .hero-visual .float-2{bottom:14%;left:-14px}
+  .dot-status{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.18)}
+  /* Sparkles for the cold half (matches IG packaged-AC posts) */
+  .spark{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;opacity:.7}
+  .spark.lg{width:5px;height:5px;opacity:.9}
+
+  @media (max-width:880px){
+    .hero{padding:40px 0 56px}
+    .hero .grid{grid-template-columns:1fr;gap:36px}
+  }
+
+  /* ───────── Trust strip ───────── */
+  .trust{padding:28px 0;border-bottom:1px solid var(--line);background:#fff}
+  .trust .row{display:flex;align-items:center;gap:32px;flex-wrap:wrap;justify-content:space-between}
+  .trust .label{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .trust .logos{display:flex;gap:36px;align-items:center;flex-wrap:wrap}
+  .client-logo{
+    font-family:'Archivo',sans-serif;font-weight:800;color:#9aa4b6;letter-spacing:.04em;
+    font-size:18px;opacity:.85;transition:color .2s;
+  }
+  .client-logo:hover{color:var(--ink-2)}
+
+  /* ───────── Section base ───────── */
+  section{padding:96px 0}
+  .section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+  .section-head .left{max-width:680px}
+  .section-head h2{margin-top:12px}
+  .section-head p{color:var(--muted);margin-top:14px;font-size:17px;max-width:620px}
+  .section-head .right a{font-weight:700;color:var(--blue-700);display:inline-flex;align-items:center;gap:6px}
+
+  /* ───────── Services ───────── */
+  .services{background:var(--bg-2)}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .svc{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);
+    padding:28px;display:flex;flex-direction:column;gap:14px;
+    transition:transform .25s, box-shadow .25s, border-color .25s;
+    position:relative;overflow:hidden;
+  }
+  .svc:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:transparent}
+  .svc .ic{
+    width:54px;height:54px;border-radius:14px;
+    background:linear-gradient(140deg,var(--blue-50),#fff);
+    display:flex;align-items:center;justify-content:center;color:var(--blue);
+    box-shadow:inset 0 0 0 1px rgba(18,104,212,.12);
+  }
+  .svc h3{margin-top:6px}
+  .svc p{color:var(--muted);font-size:15px}
+  .svc ul{margin:8px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+  .svc li{
+    font-size:12px;font-weight:600;color:var(--blue-700);background:var(--blue-50);
+    padding:5px 10px;border-radius:999px;
+  }
+  .svc .arrow{margin-top:auto;color:var(--ink-2);font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:8px}
+  .svc .arrow svg{transition:transform .2s}
+  .svc:hover .arrow svg{transform:translateX(4px)}
+  @media (max-width:980px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:620px){.svc-grid{grid-template-columns:1fr}}
+
+  /* ───────── Inventory / Shop ───────── */
+  .inventory{background:#fff}
+  /* Category bar (Carlisa-style chip filters) */
+  .cat-bar{
+    display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;margin-bottom:28px;
+    scrollbar-width:thin;
+  }
+  .cat-chip{
+    flex-shrink:0;display:inline-flex;align-items:center;gap:8px;
+    padding:10px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);
+    font-weight:600;font-size:14px;color:var(--ink-2);transition:all .18s;
+  }
+  .cat-chip:hover{border-color:var(--blue-300);color:var(--blue-700)}
+  .cat-chip.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .cat-chip .count{
+    font-size:11px;background:rgba(0,0,0,.06);padding:2px 7px;border-radius:999px;font-weight:700;
+  }
+  .cat-chip.active .count{background:rgba(255,255,255,.18)}
+
+  /* Big category cards */
+  .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:48px}
+  .cat-card{
+    position:relative;border-radius:var(--radius-lg);overflow:hidden;
+    aspect-ratio:1/1.1;border:1px solid var(--line);
+    background:linear-gradient(170deg,#fff 0%, var(--blue-50) 100%);
+    display:flex;flex-direction:column;justify-content:flex-end;
+    padding:18px;transition:transform .25s, box-shadow .25s;
+  }
+  .cat-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+  .cat-card .visual{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    padding-bottom:24%;
+  }
+  .cat-card.alt{background:linear-gradient(170deg,#0a2c5c 0%, #1a3f7a 100%);color:#fff}
+  .cat-card.alt .name{color:#fff}
+  .cat-card.alt .count-pill{background:rgba(255,255,255,.16);color:#fff}
+  .cat-card.warm{background:linear-gradient(170deg,#fff7e6 0%, #fde2a4 100%)}
+  .cat-card .name{font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;color:var(--ink);position:relative}
+  .cat-card .count-pill{
+    display:inline-flex;align-items:center;gap:6px;
+    margin-top:6px;font-size:12px;font-weight:700;
+    background:rgba(255,255,255,.7);padding:4px 10px;border-radius:999px;color:var(--ink-2);
+    width:fit-content;position:relative;
+  }
+  @media (max-width:980px){.cat-grid{grid-template-columns:repeat(2,1fr)}}
+
+  /* Product grid (Carlisa-style cards) */
+  .prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .prod{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;display:flex;flex-direction:column;
+    transition:transform .25s, box-shadow .25s, border-color .25s;
+    position:relative;
+  }
+  .prod:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:transparent}
+  .prod .img{
+    position:relative;aspect-ratio:1/1;background:#f4f7fb;
+    display:flex;align-items:center;justify-content:center;
+    overflow:hidden;
+  }
+  .prod .img::after{
+    /* IG-style podium ellipse */
+    content:"";position:absolute;left:50%;bottom:8%;transform:translateX(-50%);
+    width:78%;height:14%;border-radius:50%;
+    background:radial-gradient(ellipse at center, rgba(0,0,0,.10), rgba(0,0,0,0) 65%);
+    pointer-events:none;
+  }
+  .prod .badge{
+    position:absolute;top:10px;left:10px;z-index:2;
+    font-family:'Archivo',sans-serif;font-weight:900;font-size:11px;letter-spacing:.14em;
+    background:var(--blue);color:#fff;padding:5px 9px;border-radius:6px;
+  }
+  .prod .badge.sale{background:var(--sun);color:#3a2400}
+  .prod .body{padding:14px 16px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+  .prod .cat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .prod .name{font-family:'Archivo',sans-serif;font-weight:700;font-size:15.5px;color:var(--ink);line-height:1.2;min-height:2.4em}
+  .prod .price{display:flex;align-items:baseline;gap:8px;margin-top:auto;padding-top:6px}
+  .prod .price b{font-family:'Archivo',sans-serif;font-weight:800;font-size:17px;color:var(--ink)}
+  .prod .price .was{color:var(--muted);text-decoration:line-through;font-size:13px}
+  .prod .row-bot{display:flex;align-items:center;justify-content:space-between;padding:0 16px 14px;gap:10px}
+  .prod .add{
+    background:var(--ink);color:#fff;padding:8px 12px;border-radius:8px;font-weight:700;font-size:12.5px;
+    display:inline-flex;align-items:center;gap:6px;transition:background .18s;
+  }
+  .prod .add:hover{background:var(--blue)}
+  .prod .stock{font-size:11.5px;color:var(--muted);font-weight:600;display:inline-flex;align-items:center;gap:6px}
+  .prod .stock::before{content:"";width:7px;height:7px;border-radius:50%;background:#22c55e}
+  .prod .stock.low::before{background:var(--sun)}
+
+  /* SVG product illustrations (clean, brand-aligned) */
+  .pimg{width:75%;height:75%;filter:drop-shadow(0 6px 12px rgba(15,40,90,.12))}
+
+  @media (max-width:1100px){.prod-grid{grid-template-columns:repeat(3,1fr)}}
+  @media (max-width:780px){.prod-grid{grid-template-columns:repeat(2,1fr)}}
+
+  .inv-cta{
+    margin-top:40px;background:linear-gradient(120deg,var(--ink) 0%, var(--blue-800) 100%);
+    color:#fff;border-radius:var(--radius-lg);padding:36px 40px;
+    display:flex;align-items:center;gap:24px;justify-content:space-between;flex-wrap:wrap;
+    position:relative;overflow:hidden;
+  }
+  .inv-cta::before{
+    content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;
+    border-radius:50%;background:radial-gradient(circle,rgba(245,183,61,.35),transparent 60%);
+  }
+  .inv-cta h3{font-size:26px;line-height:1.15}
+  .inv-cta p{color:#b8c5dc;margin-top:8px;max-width:520px;font-size:15px}
+
+  /* ───────── Featured / Why ───────── */
+  .why{background:linear-gradient(180deg,#0a2c5c 0%, #051a3c 100%);color:#fff;position:relative;overflow:hidden}
+  .why::before{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(800px 400px at 80% 20%, rgba(245,183,61,.12), transparent 60%),
+      radial-gradient(800px 400px at 10% 80%, rgba(31,123,232,.18), transparent 60%);
+    pointer-events:none;
+  }
+  .why .wrap{position:relative}
+  .why .grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .why h2{color:#fff}
+  .why p{color:#b8c5dc;margin-top:14px;font-size:17px}
+  .why ul{margin:32px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .why li{display:flex;gap:14px;align-items:flex-start}
+  .why li .check{
+    width:28px;height:28px;border-radius:8px;background:rgba(245,183,61,.18);color:var(--sun);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .why li b{display:block;font-family:'Archivo',sans-serif;font-weight:700;font-size:16px;color:#fff}
+  .why li span{color:#9fb0cf;font-size:14px}
+  /* Stats card */
+  .stats-card{
+    background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(14px);border-radius:var(--radius-lg);padding:36px;
+    display:grid;grid-template-columns:1fr 1fr;gap:24px;
+  }
+  .stat b{font-family:'Archivo',sans-serif;font-weight:900;font-size:48px;letter-spacing:-.02em;color:#fff;display:block;
+    background:linear-gradient(135deg,#fff 0%, var(--sun) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat span{color:#b8c5dc;font-size:14px}
+  .stats-card hr{border:0;border-top:1px solid rgba(255,255,255,.08);grid-column:1/-1;margin:0}
+  @media (max-width:880px){.why .grid{grid-template-columns:1fr;gap:40px}.why ul{grid-template-columns:1fr}}
+
+  /* ───────── Brands ───────── */
+  .brands{background:var(--bg-2)}
+  .brand-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+  .brand{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    aspect-ratio:2/1;display:flex;align-items:center;justify-content:center;
+    font-family:'Archivo',sans-serif;font-weight:800;color:#3a4658;font-size:18px;
+    transition:transform .2s, color .2s, border-color .2s;letter-spacing:.02em;
+  }
+  .brand:hover{transform:translateY(-2px);color:var(--blue-700);border-color:var(--blue-300)}
+  @media (max-width:980px){.brand-grid{grid-template-columns:repeat(3,1fr)}}
+
+  /* ───────── Projects ───────── */
+  .projects{background:#fff}
+  .proj-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:560px}
+  .proj{
+    border-radius:var(--radius-lg);overflow:hidden;position:relative;
+    background:linear-gradient(135deg,#0a2c5c, #1268d4);color:#fff;
+    transition:transform .25s;
+  }
+  .proj:hover{transform:scale(1.01)}
+  .proj.p1{grid-row:span 2;background:linear-gradient(135deg,#0a2c5c, #1268d4 70%, #4ea3ff)}
+  .proj.p2{background:linear-gradient(135deg,#072450, #0d3a7a)}
+  .proj.p3{background:linear-gradient(135deg,#5a3a06, #d97e10 80%, var(--sun))}
+  .proj.p4{background:linear-gradient(135deg,#0a2440, #2a5fa8)}
+  .proj.p5{background:linear-gradient(135deg,#073a5a, #1492c8)}
+  .proj .meta{position:absolute;left:24px;right:24px;bottom:22px}
+  .proj .tag{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#cfe2ff;opacity:.85}
+  .proj .ttl{font-family:'Archivo',sans-serif;font-weight:800;font-size:22px;margin-top:6px;line-height:1.15}
+  .proj .ill{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:.32;pointer-events:none}
+  .proj .ill svg{width:60%;height:60%}
+  @media (max-width:980px){.proj-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;height:auto}.proj.p1{grid-row:auto;grid-column:span 2;aspect-ratio:2/1}.proj{aspect-ratio:1/.85}}
+  @media (max-width:620px){.proj-grid{grid-template-columns:1fr}.proj.p1,.proj{grid-column:auto;aspect-ratio:1.4/1}}
+
+  /* ───────── Testimonial ───────── */
+  .testi{background:var(--bg-2)}
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .quote{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);
+    padding:28px;display:flex;flex-direction:column;gap:18px;
+  }
+  .quote .stars{color:var(--sun);font-size:14px;letter-spacing:2px}
+  .quote .body{font-size:16px;color:var(--ink-2);line-height:1.5}
+  .quote .who{display:flex;align-items:center;gap:12px;margin-top:auto}
+  .quote .av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue-900));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-family:'Archivo',sans-serif}
+  .quote .who b{display:block;font-weight:700;font-size:14px}
+  .quote .who span{color:var(--muted);font-size:12.5px}
+  @media (max-width:880px){.testi-grid{grid-template-columns:1fr}}
+
+  /* ───────── Contact ───────── */
+  .contact{background:#fff}
+  .contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start}
+  .contact form{
+    background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius-lg);
+    padding:32px;display:flex;flex-direction:column;gap:14px;
+  }
+  .contact .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .contact label{font-size:12.5px;font-weight:700;color:var(--ink-2);letter-spacing:.04em}
+  .contact input,.contact select,.contact textarea{
+    width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;
+    background:#fff;font:inherit;color:var(--ink);transition:border-color .18s, box-shadow .18s;
+    margin-top:6px;
+  }
+  .contact textarea{min-height:120px;resize:vertical}
+  .contact input:focus,.contact select:focus,.contact textarea:focus{
+    outline:none;border-color:var(--blue);box-shadow:0 0 0 4px rgba(18,104,212,.12);
+  }
+  .contact .submit{
+    background:var(--blue);color:#fff;padding:14px 22px;border-radius:10px;font-weight:700;
+    transition:background .2s;
+  }
+  .contact .submit:hover{background:var(--blue-700)}
+  .info-grid{display:grid;grid-template-columns:1fr;gap:16px}
+  .info-card{
+    border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;
+    display:flex;gap:14px;align-items:flex-start;transition:border-color .2s, transform .2s;
+  }
+  .info-card:hover{border-color:var(--blue-300);transform:translateY(-2px)}
+  .info-card .ic{
+    width:42px;height:42px;border-radius:10px;background:var(--blue-50);color:var(--blue);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .info-card b{display:block;font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:var(--ink)}
+  .info-card span,.info-card a{color:var(--muted);font-size:14px;line-height:1.5;display:block}
+  .info-card a:hover{color:var(--blue-700)}
+  .map{
+    border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);height:180px;
+    background:
+      linear-gradient(135deg,#dbe7f5,#eef5ff);
+    position:relative;
+  }
+  .map::before{
+    content:"";position:absolute;inset:0;
+    background-image:
+      linear-gradient(rgba(18,104,212,.06) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(18,104,212,.06) 1px,transparent 1px);
+    background-size:24px 24px;
+  }
+  .map .pin{
+    position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);
+    width:32px;height:32px;border-radius:50% 50% 50% 0;
+    background:var(--blue);transform-origin:bottom;transform:translate(-50%,-50%) rotate(-45deg);
+    box-shadow:0 8px 18px rgba(18,104,212,.4);
+  }
+  .map .pin::after{content:"";position:absolute;inset:7px;border-radius:50%;background:#fff}
+  .map .label{
+    position:absolute;left:50%;bottom:18px;transform:translateX(-50%);
+    background:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:600;
+    box-shadow:var(--shadow-sm);
+  }
+  @media (max-width:980px){.contact-grid{grid-template-columns:1fr}}
+
+  /* ───────── Footer ───────── */
+  footer{background:var(--ink);color:#9fb0cf;padding:64px 0 24px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px}
+  footer h4{
+    color:#fff;font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;
+    letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px;
+  }
+  footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+  footer a:hover{color:#fff}
+  footer .legal{
+    margin-top:48px;border-top:1px solid #1d2738;padding-top:22px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+    font-size:13px;color:#7d89a3;
+  }
+  footer .socials{display:flex;gap:10px;margin-top:14px}
+  footer .socials a{
+    width:38px;height:38px;border-radius:10px;background:#1a2436;
+    display:flex;align-items:center;justify-content:center;transition:background .2s;
+  }
+  footer .socials a:hover{background:var(--blue)}
+  footer .klimate-wordmark{color:#fff}
+  footer .klimate-tagline{color:#7d89a3}
+  @media (max-width:880px){.foot-grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.foot-grid{grid-template-columns:1fr}}
+
+  /* ───────── Floating WhatsApp ───────── */
+  .wa{
+    position:fixed;right:20px;bottom:20px;z-index:60;
+    background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 12px 30px rgba(37,211,102,.45);transition:transform .2s;
+  }
+  .wa:hover{transform:scale(1.06)}
+  .wa::before{
+    content:"";position:absolute;inset:-6px;border-radius:50%;
+    background:rgba(37,211,102,.35);animation:pulse 2s infinite;z-index:-1;
+  }
+  @keyframes pulse{0%{transform:scale(.95);opacity:.7}70%{transform:scale(1.25);opacity:0}100%{transform:scale(.95);opacity:0}}
+
+  /* utility */
+  .nowrap{white-space:nowrap}
+  .hidden{display:none !important}
+</style>
+</head>
+<body data-screen-label="Klimate Homepage">
+
+<!-- ═══════════════ Reusable SVG defs ═══════════════ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Klimate sun-snowflake mark -->
+    <symbol id="klimate-mark" viewBox="0 0 64 64">
+      <!-- Sun half (top-left) -->
+      <g transform="translate(32 32)">
+        <!-- 8 sun rays -->
+        <g fill="#f5b73d">
+          <rect x="-2" y="-30" width="4" height="10" rx="2"/>
+          <rect x="-2" y="-30" width="4" height="10" rx="2" transform="rotate(45)"/>
+          <rect x="-2" y="-30" width="4" height="10" rx="2" transform="rotate(-45)"/>
+          <rect x="-2" y="-30" width="4" height="10" rx="2" transform="rotate(-90)"/>
+        </g>
+        <!-- Snowflake half (8 arms in blue) -->
+        <g stroke="#1268d4" stroke-width="3" stroke-linecap="round" fill="none">
+          <line x1="0" y1="0" x2="0" y2="22"/>
+          <line x1="0" y1="0" x2="19" y2="11" transform="rotate(0)"/>
+          <line x1="0" y1="0" x2="-19" y2="11"/>
+          <!-- decorative chevrons -->
+          <path d="M-4 16 L0 20 L4 16"/>
+          <path d="M-4 22 L0 26 L4 22"/>
+          <path d="M14 9 L18 11 L17 7" />
+          <path d="M-14 9 L-18 11 L-17 7"/>
+        </g>
+        <!-- center dot -->
+        <circle r="4" fill="#1268d4"/>
+      </g>
+    </symbol>
+    <symbol id="ic-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 7 9-7" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="ic-pin" viewBox="0 0 24 24"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" fill="currentColor"/></symbol>
+    <symbol id="ic-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="ic-check" viewBox="0 0 24 24"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.5 12h11l2-8H7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="20" r="1.6" fill="currentColor"/><circle cx="18" cy="20" r="1.6" fill="currentColor"/></symbol>
+    <symbol id="ic-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="ic-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="ic-snow" viewBox="0 0 24 24"><g stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></g></symbol>
+    <symbol id="ic-fan" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2" fill="currentColor"/><path d="M12 2c3 0 5 2 5 5 0 2.5-2.2 5-5 5 0-3-3-5-5-5 .5-3 3-5 5-5z M22 12c0 3-2 5-5 5-2.5 0-5-2.2-5-5 3 0 5-3 5-5 3 .5 5 3 5 5z M12 22c-3 0-5-2-5-5 0-2.5 2.2-5 5-5 0 3 3 5 5 5-.5 3-3 5-5 5z M2 12c0-3 2-5 5-5 2.5 0 5 2.2 5 5-3 0-5 3-5 5-3-.5-5-3-5-5z" fill="currentColor"/></symbol>
+    <symbol id="ic-tools" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 015.7 5.7l-9 9-4 1 1-4 9-9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M3 21l3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="ic-flame" viewBox="0 0 24 24"><path d="M12 3c1 4 5 5 5 10a5 5 0 11-10 0c0-2 1-3 2-4 0 2 1 3 2 3-1-3 0-6 1-9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-cube" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z M12 3v18 M4 7.5L12 12l8-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" fill="currentColor"/></symbol>
+    <symbol id="ic-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="ic-leaf" viewBox="0 0 24 24"><path d="M20 4c0 8-4 14-12 16 0 0-2-8 4-14 3-3 8-2 8-2z M8 20c2-4 5-7 9-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="ic-medal" viewBox="0 0 24 24"><circle cx="12" cy="14" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 8L6 3h12l-2 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3z M14 9h4l3 3v4h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.7" fill="currentColor"/><circle cx="17" cy="18" r="1.7" fill="currentColor"/></symbol>
+    <symbol id="ic-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+    <symbol id="ic-fb" viewBox="0 0 24 24"><path d="M14 9h3V5h-3a4 4 0 00-4 4v2H7v4h3v8h4v-8h3l1-4h-4V9.5c0-.3.2-.5.5-.5z" fill="currentColor"/></symbol>
+    <symbol id="ic-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="ic-wa" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 003.6 17.1L2 22l5.1-1.5A11 11 0 0020.5 3.5zM12 20a8 8 0 01-4-1.1l-3 .8.8-3A8 8 0 1112 20zm4.7-5.3c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.2-.2.3-.6.7-.8.9-.1.2-.3.2-.5.1-.3-.2-1.2-.5-2.3-1.5-.9-.7-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.4 1.7.7 2.4.8 3.3.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z" fill="currentColor"/></symbol>
+
+    <!-- Product illustrations: clean line + flat -->
+    <symbol id="prod-split" viewBox="0 0 200 200">
+      <!-- Indoor wall unit -->
+      <rect x="20" y="48" width="160" height="44" rx="10" fill="#fff" stroke="#cfd8e3" stroke-width="2"/>
+      <rect x="30" y="60" width="140" height="6" rx="3" fill="#1268d4"/>
+      <rect x="30" y="72" width="140" height="2" rx="1" fill="#dde4ee"/>
+      <rect x="30" y="78" width="140" height="2" rx="1" fill="#dde4ee"/>
+      <rect x="38" y="86" width="44" height="3" rx="1.5" fill="#9aa4b6"/>
+      <!-- Outdoor unit -->
+      <rect x="50" y="110" width="100" height="58" rx="6" fill="#f4f7fb" stroke="#cfd8e3" stroke-width="2"/>
+      <circle cx="100" cy="139" r="20" fill="#fff" stroke="#cfd8e3" stroke-width="2"/>
+      <g stroke="#1268d4" stroke-width="2.5" stroke-linecap="round" fill="none" transform="translate(100 139)">
+        <path d="M0 -14 C 7 -14 7 -7 0 -7 C -7 -7 -7 0 0 0"/>
+        <path d="M0 14 C -7 14 -7 7 0 7 C 7 7 7 0 0 0" transform="rotate(120)"/>
+        <path d="M0 14 C -7 14 -7 7 0 7 C 7 7 7 0 0 0" transform="rotate(240)"/>
+      </g>
+      <rect x="60" y="120" width="14" height="4" rx="2" fill="#cfd8e3"/>
+    </symbol>
+    <symbol id="prod-cassette" viewBox="0 0 200 200">
+      <rect x="28" y="40" width="144" height="120" rx="6" fill="#f4f7fb" stroke="#cfd8e3" stroke-width="2"/>
+      <rect x="44" y="56" width="112" height="88" rx="3" fill="#fff" stroke="#cfd8e3" stroke-width="1.5"/>
+      <g stroke="#1268d4" stroke-width="2" fill="none">
+        <line x1="44" y1="78" x2="156" y2="78"/>
+        <line x1="44" y1="100" x2="156" y2="100"/>
+        <line x1="44" y1="122" x2="156" y2="122"/>
+      </g>
+      <circle cx="100" cy="100" r="10" fill="#1268d4"/>
+    </symbol>
+    <symbol id="prod-vrf" viewBox="0 0 200 200">
+      <rect x="40" y="22" width="120" height="156" rx="8" fill="#f4f7fb" stroke="#cfd8e3" stroke-width="2"/>
+      <rect x="50" y="34" width="100" height="50" fill="#0a2c5c"/>
+      <g stroke="#7fb5f0" stroke-width="1.5">
+        <line x1="56" y1="40" x2="56" y2="78"/><line x1="64" y1="40" x2="64" y2="78"/>
+        <line x1="72" y1="40" x2="72" y2="78"/><line x1="80" y1="40" x2="80" y2="78"/>
+        <line x1="88" y1="40" x2="88" y2="78"/><line x1="96" y1="40" x2="96" y2="78"/>
+        <line x1="104" y1="40" x2="104" y2="78"/><line x1="112" y1="40" x2="112" y2="78"/>
+        <line x1="120" y1="40" x2="120" y2="78"/><line x1="128" y1="40" x2="128" y2="78"/>
+        <line x1="136" y1="40" x2="136" y2="78"/><line x1="144" y1="40" x2="144" y2="78"/>
+      </g>
+      <rect x="50" y="92" width="100" height="50" fill="#0a2c5c"/>
+      <g stroke="#7fb5f0" stroke-width="1.5">
+        <line x1="56" y1="98" x2="56" y2="136"/><line x1="64" y1="98" x2="64" y2="136"/>
+        <line x1="72" y1="98" x2="72" y2="136"/><line x1="80" y1="98" x2="80" y2="136"/>
+        <line x1="88" y1="98" x2="88" y2="136"/><line x1="96" y1="98" x2="96" y2="136"/>
+        <line x1="104" y1="98" x2="104" y2="136"/><line x1="112" y1="98" x2="112" y2="136"/>
+        <line x1="120" y1="98" x2="120" y2="136"/><line x1="128" y1="98" x2="128" y2="136"/>
+        <line x1="136" y1="98" x2="136" y2="136"/><line x1="144" y1="98" x2="144" y2="136"/>
+      </g>
+      <rect x="50" y="148" width="100" height="22" rx="3" fill="#1268d4"/>
+    </symbol>
+    <symbol id="prod-package" viewBox="0 0 200 200">
+      <path d="M30 70 L100 50 L170 70 L170 150 L30 150 Z" fill="#f4f7fb" stroke="#cfd8e3" stroke-width="2"/>
+      <rect x="50" y="80" width="100" height="60" rx="4" fill="#fff" stroke="#cfd8e3" stroke-width="2"/>
+      <g stroke="#1268d4" stroke-width="2" fill="none">
+        <line x1="60" y1="92" x2="140" y2="92"/>
+        <line x1="60" y1="100" x2="140" y2="100"/>
+        <line x1="60" y1="108" x2="140" y2="108"/>
+        <line x1="60" y1="116" x2="140" y2="116"/>
+        <line x1="60" y1="124" x2="140" y2="124"/>
+        <line x1="60" y1="132" x2="140" y2="132"/>
+      </g>
+      <rect x="84" y="58" width="32" height="6" fill="#cfd8e3" rx="2"/>
+    </symbol>
+    <symbol id="prod-fan-stand" viewBox="0 0 200 200">
+      <circle cx="100" cy="74" r="42" fill="none" stroke="#3a4658" stroke-width="3"/>
+      <circle cx="100" cy="74" r="6" fill="#1268d4"/>
+      <g stroke="#3a4658" stroke-width="2.5" fill="#dde4ee" transform="translate(100 74)">
+        <path d="M0 0 Q -10 -22 -36 -16 Q -28 -2 0 0"/>
+        <path d="M0 0 Q -10 -22 -36 -16 Q -28 -2 0 0" transform="rotate(120)"/>
+        <path d="M0 0 Q -10 -22 -36 -16 Q -28 -2 0 0" transform="rotate(240)"/>
+      </g>
+      <rect x="96" y="116" width="8" height="50" fill="#3a4658"/>
+      <ellipse cx="100" cy="170" rx="36" ry="8" fill="#3a4658"/>
+      <rect x="86" y="124" width="28" height="10" rx="3" fill="#1268d4"/>
+    </symbol>
+    <symbol id="prod-fan-wall" viewBox="0 0 200 200">
+      <rect x="20" y="60" width="22" height="80" rx="4" fill="#3a4658"/>
+      <circle cx="120" cy="100" r="48" fill="none" stroke="#3a4658" stroke-width="3"/>
+      <circle cx="120" cy="100" r="6" fill="#1268d4"/>
+      <g stroke="#3a4658" stroke-width="2.5" fill="#dde4ee" transform="translate(120 100)">
+        <path d="M0 0 Q -10 -22 -38 -18 Q -28 -2 0 0"/>
+        <path d="M0 0 Q -10 -22 -38 -18 Q -28 -2 0 0" transform="rotate(90)"/>
+        <path d="M0 0 Q -10 -22 -38 -18 Q -28 -2 0 0" transform="rotate(180)"/>
+        <path d="M0 0 Q -10 -22 -38 -18 Q -28 -2 0 0" transform="rotate(270)"/>
+      </g>
+      <path d="M42 90 L72 100 L42 110 Z" fill="#3a4658"/>
+    </symbol>
+    <symbol id="prod-fan-ceiling" viewBox="0 0 200 200">
+      <rect x="96" y="22" width="8" height="34" fill="#3a4658"/>
+      <circle cx="100" cy="68" r="14" fill="#9aa4b6"/>
+      <g fill="#7a4d29" stroke="#3a2a1a" stroke-width="1.5">
+        <path d="M100 70 L182 88 L182 96 L100 80 Z"/>
+        <path d="M100 70 L18 88 L18 96 L100 80 Z"/>
+        <path d="M100 70 L122 152 L114 152 L96 80 Z"/>
+        <path d="M100 70 L78 152 L86 152 L104 80 Z"/>
+      </g>
+      <ellipse cx="100" cy="80" rx="14" ry="6" fill="#cfd8e3"/>
+      <ellipse cx="100" cy="148" rx="22" ry="10" fill="#fff5d4" stroke="#e2c171" stroke-width="2"/>
+    </symbol>
+    <symbol id="prod-extractor" viewBox="0 0 200 200">
+      <rect x="30" y="30" width="140" height="140" rx="6" fill="#7fb5f0" stroke="#1268d4" stroke-width="3"/>
+      <rect x="44" y="44" width="112" height="112" rx="4" fill="#0a2c5c"/>
+      <g fill="#cfd8e3" transform="translate(100 100)">
+        <ellipse cx="0" cy="0" rx="6" ry="6"/>
+        <ellipse cx="0" cy="-32" rx="14" ry="6" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-32" rx="14" ry="6" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-32" rx="14" ry="6" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-32" rx="14" ry="6" transform="rotate(270)"/>
+      </g>
+      <g fill="#1268d4">
+        <circle cx="42" cy="42" r="3"/><circle cx="158" cy="42" r="3"/>
+        <circle cx="42" cy="158" r="3"/><circle cx="158" cy="158" r="3"/>
+      </g>
+    </symbol>
+    <symbol id="prod-water-tank" viewBox="0 0 200 200">
+      <rect x="56" y="20" width="88" height="160" rx="14" fill="#f4f7fb" stroke="#cfd8e3" stroke-width="2"/>
+      <rect x="56" y="20" width="88" height="34" rx="14 14 0 0" fill="#dde4ee"/>
+      <rect x="76" y="80" width="48" height="24" rx="3" fill="#0a2c5c"/>
+      <text x="100" y="98" text-anchor="middle" fill="#f5b73d" font-family="Archivo" font-weight="800" font-size="13">48°</text>
+      <circle cx="100" cy="124" r="6" fill="#1268d4"/>
+      <circle cx="100" cy="146" r="6" fill="none" stroke="#cfd8e3" stroke-width="2"/>
+      <rect x="92" y="166" width="16" height="12" fill="#9aa4b6"/>
+    </symbol>
+    <symbol id="prod-water-tankless" viewBox="0 0 200 200">
+      <rect x="60" y="30" width="80" height="140" rx="10" fill="#fff" stroke="#cfd8e3" stroke-width="2"/>
+      <rect x="60" y="30" width="80" height="80" rx="10 10 0 0" fill="#0a2c5c"/>
+      <text x="100" y="76" text-anchor="middle" fill="#f5b73d" font-family="Archivo" font-weight="800" font-size="22">48°</text>
+      <rect x="74" y="92" width="52" height="3" fill="#1268d4"/>
+      <g fill="#cfd8e3"><circle cx="86" cy="130" r="3"/><circle cx="100" cy="130" r="3"/><circle cx="114" cy="130" r="3"/></g>
+      <rect x="74" y="148" width="52" height="14" rx="3" fill="#dde4ee"/>
+    </symbol>
+    <symbol id="prod-water-pump" viewBox="0 0 200 200">
+      <rect x="40" y="120" width="120" height="50" rx="6" fill="#1d2738"/>
+      <circle cx="80" cy="80" r="38" fill="#f5b73d" stroke="#d97e10" stroke-width="3"/>
+      <circle cx="80" cy="80" r="14" fill="#1d2738"/>
+      <rect x="120" y="60" width="46" height="20" rx="3" fill="#3a4658"/>
+      <rect x="58" y="40" width="36" height="14" rx="3" fill="#3a4658"/>
+      <rect x="46" y="170" width="108" height="10" rx="2" fill="#3a4658"/>
+    </symbol>
+    <symbol id="prod-cold-storage" viewBox="0 0 200 200">
+      <rect x="20" y="36" width="160" height="128" rx="6" fill="#f4f7fb" stroke="#cfd8e3" stroke-width="2"/>
+      <rect x="34" y="50" width="60" height="100" rx="4" fill="#fff" stroke="#cfd8e3" stroke-width="2"/>
+      <rect x="106" y="50" width="60" height="100" rx="4" fill="#dde4ee" stroke="#cfd8e3" stroke-width="2"/>
+      <circle cx="86" cy="100" r="2.5" fill="#1268d4"/>
+      <circle cx="118" cy="100" r="2.5" fill="#1268d4"/>
+      <rect x="40" y="60" width="48" height="24" fill="#7fb5f0" opacity=".4"/>
+      <rect x="40" y="92" width="48" height="24" fill="#7fb5f0" opacity=".25"/>
+      <rect x="40" y="124" width="48" height="20" fill="#7fb5f0" opacity=".15"/>
+    </symbol>
+    <symbol id="prod-fan-extractor-small" viewBox="0 0 200 200">
+      <rect x="34" y="80" width="60" height="60" rx="3" fill="#dde4ee" stroke="#3a4658" stroke-width="2"/>
+      <g stroke="#3a4658" stroke-width="2" fill="none">
+        <line x1="40" y1="92" x2="88" y2="92"/>
+        <line x1="40" y1="104" x2="88" y2="104"/>
+        <line x1="40" y1="116" x2="88" y2="116"/>
+        <line x1="40" y1="128" x2="88" y2="128"/>
+      </g>
+      <rect x="100" y="50" width="60" height="120" rx="6" fill="#f4f7fb" stroke="#cfd8e3" stroke-width="2"/>
+      <circle cx="130" cy="110" r="34" fill="none" stroke="#3a4658" stroke-width="2"/>
+      <g fill="#cfd8e3" stroke="#3a4658" stroke-width="1.5" transform="translate(130 110)">
+        <path d="M0 0 Q -8 -16 -28 -14 Q -22 -2 0 0"/>
+        <path d="M0 0 Q -8 -16 -28 -14 Q -22 -2 0 0" transform="rotate(120)"/>
+        <path d="M0 0 Q -8 -16 -28 -14 Q -22 -2 0 0" transform="rotate(240)"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ═══════════════ Topbar ═══════════════ -->
+<div class="topbar">
+  <div class="wrap row">
+    <div class="left">
+      <a href="tel:+18769135679"><svg width="14" height="14"><use href="#ic-phone"/></svg> 1 (876) 913-5679</a>
+      <a href="mailto:info@klimatejamaica.com" class="hide-sm"><svg width="14" height="14"><use href="#ic-mail"/></svg> info@klimatejamaica.com</a>
+    </div>
+    <div class="right">
+      <span class="hide-sm"><svg width="14" height="14" style="vertical-align:-3px"><use href="#ic-pin"/></svg> Discovery Bay, St. Ann</span>
+      <span class="pill">Now Booking · 24/7 Service</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ Nav ═══════════════ -->
+<header class="nav" data-screen-label="Nav">
+  <div class="wrap row">
+    <a href="#" class="klimate-logo" aria-label="Klimate Contractors Limited home">
+      <img class="klimate-lockup" src="assets/klimate-logo.png" alt="Klimate Contractors Limited" />
+    </a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="shop.html">Shop</a>
+      <a href="#projects">Projects</a>
+      <a href="#brands">Brands</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="cta">Book Service <svg width="16" height="16"><use href="#ic-arrow"/></svg></a>
+    <button class="menu-btn" aria-label="Open menu"><svg width="20" height="20"><use href="#ic-menu"/></svg></button>
+  </div>
+</header>
+
+<!-- ═══════════════ Hero ═══════════════ -->
+<section class="hero" data-screen-label="Hero" style="padding-top:64px">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <span class="eyebrow">Jamaica's HVAC Industry Leader · Est. 2012</span>
+        <h1>Comfort, <span class="accent">cooled to perfection</span> &mdash; from Negril to Port Antonio.</h1>
+        <p class="lede">From split inverters and VRF systems to commercial cold storage, water heaters and industrial fans &mdash; Klimate is Jamaica's full-stack HVAC, refrigeration and mechanical service provider. Engineered installs. Honest pricing. Real warranties.</p>
+        <div class="ctas">
+          <a href="shop.html" class="btn btn-primary">Shop Inventory <svg width="16" height="16"><use href="#ic-arrow"/></svg></a>
+          <a href="#contact" class="btn btn-ghost">Request a Quote</a>
+        </div>
+        <div class="meta">
+          <div><strong>13+</strong>Years on the island</div>
+          <div><strong>2,400+</strong>Installations completed</div>
+          <div><strong>4.9★</strong>Avg. customer rating</div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="split">
+          <div class="hot">
+            <span class="label">HEAT · ON DEMAND</span>
+            <!-- Sun rays decoration -->
+            <svg style="position:absolute;inset:0" viewBox="0 0 400 400" preserveAspectRatio="none">
+              <g stroke="rgba(255,255,255,.25)" stroke-width="1" fill="none">
+                <line x1="60" y1="0" x2="60" y2="400"/>
+                <line x1="180" y1="0" x2="180" y2="400"/>
+                <line x1="300" y1="0" x2="300" y2="400"/>
+              </g>
+            </svg>
+          </div>
+          <div class="cold">
+            <span class="label">COOL · ALL YEAR</span>
+            <span class="spark lg" style="top:18%;left:22%"></span>
+            <span class="spark" style="top:40%;left:65%"></span>
+            <span class="spark lg" style="top:64%;left:18%"></span>
+            <span class="spark" style="top:78%;left:78%"></span>
+            <span class="spark" style="top:30%;left:88%"></span>
+            <span class="spark lg" style="top:88%;left:50%"></span>
+            <span class="spark" style="top:12%;left:55%"></span>
+          </div>
+        </div>
+        <div class="center">
+          <div class="ring">
+            <img src="assets/klimate-icon.png" alt="Klimate icon" style="width:78%;height:78%;object-fit:contain" />
+          </div>
+        </div>
+        <div class="floating float-1">
+          <span class="dot-status"></span>
+          <div><b style="font-size:13px">VRF · Online</b><br><span style="color:var(--muted);font-size:11.5px">Royalton · 64 units</span></div>
+        </div>
+        <div class="floating float-2">
+          <svg width="20" height="20" style="color:var(--blue)"><use href="#ic-truck"/></svg>
+          <div><b style="font-size:13px">Same-day dispatch</b><br><span style="color:var(--muted);font-size:11.5px">Across Jamaica</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Trust strip ═══════════════ -->
+<div class="trust">
+  <div class="wrap row">
+    <div class="label">Trusted by Jamaica's leading hotels, banks &amp; brands</div>
+    <div class="logos">
+      <span class="client-logo">PAYLESS</span>
+      <span class="client-logo" style="font-style:italic">Bahia Principe</span>
+      <span class="client-logo">ROYALTON</span>
+      <span class="client-logo">NCB</span>
+      <span class="client-logo">Moon Palace</span>
+      <span class="client-logo" style="letter-spacing:.18em">DIGICEL</span>
+      <span class="client-logo">NORANDA</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ Services ═══════════════ -->
+<section id="services" class="services" data-screen-label="Services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="left">
+        <span class="eyebrow">What we do</span>
+        <h2>Industry-standard HVAC, every system, every scale.</h2>
+        <p>Supply, install, service and repair &mdash; for homes, hotels, hospitals, supermarkets and warehouses. Licensed technicians. Genuine parts. Manufacturer-backed warranties on every install.</p>
+      </div>
+      <div class="right"><a href="shop.html">View all services <svg width="16" height="16" style="vertical-align:-3px"><use href="#ic-arrow"/></svg></a></div>
+    </div>
+
+    <div class="svc-grid">
+      <a class="svc" href="shop.html">
+        <div class="ic"><svg width="26" height="26"><use href="#ic-snow"/></svg></div>
+        <h3>Air Conditioning</h3>
+        <p>Mini-split inverters, cassette, ducted, VRF/VRV systems and packaged rooftop units &mdash; sized, supplied and installed.</p>
+        <ul><li>Residential</li><li>Light Commercial</li><li>VRF / VRV</li><li>9k–60k BTU</li></ul>
+        <span class="arrow">Browse AC <svg width="14" height="14"><use href="#ic-arrow"/></svg></span>
+      </a>
+      <a class="svc" href="shop.html">
+        <div class="ic"><svg width="26" height="26"><use href="#ic-cube"/></svg></div>
+        <h3>Cold Storage &amp; Refrigeration</h3>
+        <p>MIZER<sup>®</sup> walk-in cold rooms, container units, glass-door display units and solar cold storage &mdash; built to spec.</p>
+        <ul><li>Stainless Steel</li><li>Solar</li><li>Container</li><li>Smart</li></ul>
+        <span class="arrow">Cold storage units <svg width="14" height="14"><use href="#ic-arrow"/></svg></span>
+      </a>
+      <a class="svc" href="shop.html">
+        <div class="ic"><svg width="26" height="26"><use href="#ic-flame"/></svg></div>
+        <h3>Water Heaters</h3>
+        <p>KOMAT<sup>®</sup> tankless instant heaters, traditional tank heaters and inverter heaters &mdash; supply &amp; install nationwide.</p>
+        <ul><li>Tankless</li><li>Tank</li><li>Inverter</li><li>Solar-ready</li></ul>
+        <span class="arrow">Browse heaters <svg width="14" height="14"><use href="#ic-arrow"/></svg></span>
+      </a>
+      <a class="svc" href="shop.html">
+        <div class="ic"><svg width="26" height="26"><use href="#ic-fan"/></svg></div>
+        <h3>Fans &amp; Ventilation</h3>
+        <p>Standing, wall, ceiling, table, industrial high-velocity, ducted ventilating fans, extractors and turbine ventilators.</p>
+        <ul><li>Industrial</li><li>Ceiling</li><li>Wall</li><li>Extractor</li></ul>
+        <span class="arrow">Browse fans <svg width="14" height="14"><use href="#ic-arrow"/></svg></span>
+      </a>
+      <a class="svc" href="shop.html">
+        <div class="ic"><svg width="26" height="26"><use href="#ic-bolt"/></svg></div>
+        <h3>Water Pumps &amp; Pressure</h3>
+        <p>Auto-jet, centrifugal, submersible and complete pressurization systems for residential and commercial properties.</p>
+        <ul><li>Auto-Jet</li><li>Centrifugal</li><li>Submersible</li><li>1HP–10HP</li></ul>
+        <span class="arrow">Browse pumps <svg width="14" height="14"><use href="#ic-arrow"/></svg></span>
+      </a>
+      <a class="svc" href="#contact">
+        <div class="ic"><svg width="26" height="26"><use href="#ic-tools"/></svg></div>
+        <h3>Service &amp; Maintenance</h3>
+        <p>Scheduled servicing, error-code diagnosis, leak repair, ductwork inspection &amp; repair, thermostat troubleshooting.</p>
+        <ul><li>Service Plans</li><li>Repairs</li><li>Diagnostics</li><li>24/7</li></ul>
+        <span class="arrow">Book service <svg width="14" height="14"><use href="#ic-arrow"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Inventory / Shop ═══════════════ -->
+<section id="shop" class="inventory" data-screen-label="Shop / Inventory">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="left">
+        <span class="eyebrow">Shop the inventory</span>
+        <h2>Browse 200+ HVAC products in stock &mdash; ready for pickup or island-wide delivery.</h2>
+        <p>Real prices. Real availability. Filter by category, request a quote, or call us at <a href="tel:+18769135679" style="color:var(--blue-700);font-weight:700">1 (876) 913-5679</a> to confirm stock for your project.</p>
+      </div>
+      <div class="right">
+        <a href="#contact">Request bulk pricing <svg width="16" height="16" style="vertical-align:-3px"><use href="#ic-arrow"/></svg></a>
+      </div>
+    </div>
+
+    <!-- Big category cards (browse by department, like Carlisa homepage) -->
+    <div class="cat-grid">
+      <a class="cat-card" href="shop.html" data-set-cat="ac">
+        <div class="visual"><svg viewBox="0 0 200 200" width="80%" height="80%"><use href="#prod-split"/></svg></div>
+        <div class="name">Air Conditioners</div>
+        <div class="count-pill">42 products <svg width="11" height="11"><use href="#ic-arrow"/></svg></div>
+      </a>
+      <a class="cat-card alt" href="shop.html" data-set-cat="cold">
+        <div class="visual"><svg viewBox="0 0 200 200" width="80%" height="80%"><use href="#prod-cold-storage"/></svg></div>
+        <div class="name">Cold Storage</div>
+        <div class="count-pill">18 products <svg width="11" height="11"><use href="#ic-arrow"/></svg></div>
+      </a>
+      <a class="cat-card warm" href="shop.html" data-set-cat="heater">
+        <div class="visual"><svg viewBox="0 0 200 200" width="80%" height="80%"><use href="#prod-water-tankless"/></svg></div>
+        <div class="name">Water Heaters</div>
+        <div class="count-pill">24 products <svg width="11" height="11"><use href="#ic-arrow"/></svg></div>
+      </a>
+      <a class="cat-card" href="shop.html" data-set-cat="fan">
+        <div class="visual"><svg viewBox="0 0 200 200" width="80%" height="80%"><use href="#prod-fan-stand"/></svg></div>
+        <div class="name">Fans &amp; Ventilation</div>
+        <div class="count-pill">56 products <svg width="11" height="11"><use href="#ic-arrow"/></svg></div>
+      </a>
+    </div>
+
+    <!-- Filter chip bar -->
+    <div class="cat-bar" id="catBar">
+      <button class="cat-chip active" data-cat="all">All <span class="count">24</span></button>
+      <button class="cat-chip" data-cat="ac">Air Conditioners <span class="count">8</span></button>
+      <button class="cat-chip" data-cat="cold">Cold Storage <span class="count">3</span></button>
+      <button class="cat-chip" data-cat="heater">Water Heaters <span class="count">3</span></button>
+      <button class="cat-chip" data-cat="fan">Fans <span class="count">5</span></button>
+      <button class="cat-chip" data-cat="extractor">Extractor Fans <span class="count">2</span></button>
+      <button class="cat-chip" data-cat="pump">Water Pumps <span class="count">3</span></button>
+    </div>
+
+    <!-- Product grid -->
+    <div class="prod-grid" id="prodGrid">
+      <!-- AC -->
+      <a class="prod" data-cat="ac" href="shop.html#ac">
+        <div class="img"><span class="badge sale">SALE</span><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-split"/></svg></div>
+        <div class="body">
+          <span class="cat">Air Conditioner · Inverter</span>
+          <span class="name">Z-Pro Series 12,000 BTU R32 Inverter Split</span>
+          <div class="price"><b>$74,995</b><span class="was">$84,995</span></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Quote <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="ac" href="shop.html#ac">
+        <div class="img"><span class="badge">NEW</span><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-split"/></svg></div>
+        <div class="body">
+          <span class="cat">Air Conditioner · Inverter</span>
+          <span class="name">Z-Pro Series 18,000 BTU R32 Inverter Split</span>
+          <div class="price"><b>$112,995</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Quote <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="ac" href="shop.html#ac">
+        <div class="img"><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-split"/></svg></div>
+        <div class="body">
+          <span class="cat">Air Conditioner · 9,000 BTU</span>
+          <span class="name">Windy 9,000 BTU Non-Inverter Split (Series #8)</span>
+          <div class="price"><b>$48,995</b></div>
+        </div>
+        <div class="row-bot"><span class="stock low">Low stock</span><span class="add">Quote <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="ac" href="shop.html#ac">
+        <div class="img"><span class="badge sale">SALE</span><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-cassette"/></svg></div>
+        <div class="body">
+          <span class="cat">Air Conditioner · Cassette</span>
+          <span class="name">Z-Real 24,000 BTU 4-Way Cassette R410A</span>
+          <div class="price"><b>$184,995</b><span class="was">$214,995</span></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Quote <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="ac" href="shop.html#ac">
+        <div class="img"><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-vrf"/></svg></div>
+        <div class="body">
+          <span class="cat">Air Conditioner · VRF</span>
+          <span class="name">VRF ZTVM Series · Commercial DC Inverter</span>
+          <div class="price"><b>Quote</b><span class="was" style="text-decoration:none">on request</span></div>
+        </div>
+        <div class="row-bot"><span class="stock">Built-to-spec</span><span class="add">Enquire <svg width="13" height="13"><use href="#ic-arrow"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="ac" href="shop.html#ac">
+        <div class="img"><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-vrf"/></svg></div>
+        <div class="body">
+          <span class="cat">Air Conditioner · VRF</span>
+          <span class="name">VRF CTVT Full-DC Inverter Outdoor Unit</span>
+          <div class="price"><b>Quote</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">Built-to-spec</span><span class="add">Enquire <svg width="13" height="13"><use href="#ic-arrow"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="ac" href="shop.html#ac">
+        <div class="img"><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-package"/></svg></div>
+        <div class="body">
+          <span class="cat">Air Conditioner · Packaged</span>
+          <span class="name">Rheem RACGYB Renaissance Packaged A/C 15-25 Ton</span>
+          <div class="price"><b>Quote</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">Lead time 4-6 wks</span><span class="add">Enquire <svg width="13" height="13"><use href="#ic-arrow"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="ac" href="shop.html#ac">
+        <div class="img"><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-package"/></svg></div>
+        <div class="body">
+          <span class="cat">Air Conditioner · Packaged</span>
+          <span class="name">Rheem RACAYB Endeavor Packaged 2-5 Ton, R-454B</span>
+          <div class="price"><b>Quote</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Enquire <svg width="13" height="13"><use href="#ic-arrow"/></svg></span></div>
+      </a>
+
+      <!-- Cold storage -->
+      <a class="prod" data-cat="cold" href="shop.html#cold">
+        <div class="img"><span class="badge">NEW</span><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-cold-storage"/></svg></div>
+        <div class="body">
+          <span class="cat">Cold Storage · MIZER®</span>
+          <span class="name">Stainless Steel Cold Storage Unit (3×2×2.5m)</span>
+          <div class="price"><b>Quote</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">Built-to-spec</span><span class="add">Enquire <svg width="13" height="13"><use href="#ic-arrow"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="cold" href="shop.html#cold">
+        <div class="img"><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-cold-storage"/></svg></div>
+        <div class="body">
+          <span class="cat">Cold Storage · MIZER®</span>
+          <span class="name">Glass-Door Display Cold Storage (4-door)</span>
+          <div class="price"><b>Quote</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Enquire <svg width="13" height="13"><use href="#ic-arrow"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="cold" href="shop.html#cold">
+        <div class="img"><span class="badge sale">SALE</span><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-cold-storage"/></svg></div>
+        <div class="body">
+          <span class="cat">Cold Storage · Solar</span>
+          <span class="name">Solar Cold Storage Container Unit (20ft / 40ft)</span>
+          <div class="price"><b>Quote</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">Built-to-spec</span><span class="add">Enquire <svg width="13" height="13"><use href="#ic-arrow"/></svg></span></div>
+      </a>
+
+      <!-- Heaters -->
+      <a class="prod" data-cat="heater" href="shop.html#heater">
+        <div class="img"><span class="badge sale">SALE</span><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-water-tankless"/></svg></div>
+        <div class="body">
+          <span class="cat">Water Heater · KOMAT®</span>
+          <span class="name">KOMAT Tankless Instant Heater 8.5kW (Multi-point)</span>
+          <div class="price"><b>$32,995</b><span class="was">$38,995</span></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Quote <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="heater" href="shop.html#heater">
+        <div class="img"><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-water-tankless"/></svg></div>
+        <div class="body">
+          <span class="cat">Water Heater · Tankless</span>
+          <span class="name">CENTON Single-Point Tankless 5.5kW 220V</span>
+          <div class="price"><b>$22,995</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Quote <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="heater" href="shop.html#heater">
+        <div class="img"><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-water-tank"/></svg></div>
+        <div class="body">
+          <span class="cat">Water Heater · Tank</span>
+          <span class="name">JNOD 30 Gallon Vertical Tank Water Heater</span>
+          <div class="price"><b>$54,995</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Quote <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+
+      <!-- Fans -->
+      <a class="prod" data-cat="fan" href="shop.html#fan">
+        <div class="img"><span class="badge sale">SALE</span><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-fan-stand"/></svg></div>
+        <div class="body">
+          <span class="cat">Fan · Standing</span>
+          <span class="name">18″ Jet-Stream Industrial Standing Fan</span>
+          <div class="price"><b>$13,995</b><span class="was">$15,995</span></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Add <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="fan" href="shop.html#fan">
+        <div class="img"><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-fan-wall"/></svg></div>
+        <div class="body">
+          <span class="cat">Fan · Wall</span>
+          <span class="name">18″ Jet-Stream Wall Fan, 3-Speed</span>
+          <div class="price"><b>$12,495</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Add <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="fan" href="shop.html#fan">
+        <div class="img"><span class="badge">NEW</span><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-fan-ceiling"/></svg></div>
+        <div class="body">
+          <span class="cat">Fan · Ceiling</span>
+          <span class="name">52″ 5-Blade Ceiling Fan with Dome Light</span>
+          <div class="price"><b>$24,995</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Add <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="fan" href="shop.html#fan">
+        <div class="img"><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-fan-ceiling"/></svg></div>
+        <div class="body">
+          <span class="cat">Fan · Ceiling</span>
+          <span class="name">52″ 3-Light Ceiling Fan, Mahogany Finish</span>
+          <div class="price"><b>$26,995</b></div>
+        </div>
+        <div class="row-bot"><span class="stock low">Low stock</span><span class="add">Add <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="fan" href="shop.html#fan">
+        <div class="img"><span class="badge sale">SALE</span><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-fan-stand"/></svg></div>
+        <div class="body">
+          <span class="cat">Fan · Industrial</span>
+          <span class="name">20″ High-Velocity Industrial Standing Fan</span>
+          <div class="price"><b>$22,995</b><span class="was">$26,995</span></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Add <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+
+      <!-- Extractor -->
+      <a class="prod" data-cat="extractor" href="shop.html#extractor">
+        <div class="img"><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-extractor"/></svg></div>
+        <div class="body">
+          <span class="cat">Extractor · Industrial</span>
+          <span class="name">Industrial Wall Extractor Fan, Heavy-Duty</span>
+          <div class="price"><b>$18,995</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Add <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="extractor" href="shop.html#extractor">
+        <div class="img"><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-fan-extractor-small"/></svg></div>
+        <div class="body">
+          <span class="cat">Extractor · Ducted</span>
+          <span class="name">Duct-Connecting Ceiling Ventilation Fan</span>
+          <div class="price"><b>$14,995</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Add <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+
+      <!-- Pumps -->
+      <a class="prod" data-cat="pump" href="shop.html#pump">
+        <div class="img"><span class="badge">NEW</span><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-water-pump"/></svg></div>
+        <div class="body">
+          <span class="cat">Water Pump · Auto-Jet</span>
+          <span class="name">1HP Auto-Jet Water Pump System (110V)</span>
+          <div class="price"><b>$32,995</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Add <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="pump" href="shop.html#pump">
+        <div class="img"><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-water-pump"/></svg></div>
+        <div class="body">
+          <span class="cat">Water Pump · Centrifugal</span>
+          <span class="name">2HP Multi-stage Centrifugal Pump (Inverter)</span>
+          <div class="price"><b>$262,995</b></div>
+        </div>
+        <div class="row-bot"><span class="stock low">Lead time 1-2 wks</span><span class="add">Quote <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+      <a class="prod" data-cat="pump" href="shop.html#pump">
+        <div class="img"><svg class="pimg" viewBox="0 0 200 200"><use href="#prod-water-pump"/></svg></div>
+        <div class="body">
+          <span class="cat">Water Pump · Pressure System</span>
+          <span class="name">1.5HP Auto Pressurization System with Inverter</span>
+          <div class="price"><b>$132,995</b></div>
+        </div>
+        <div class="row-bot"><span class="stock">In stock</span><span class="add">Quote <svg width="13" height="13"><use href="#ic-cart"/></svg></span></div>
+      </a>
+    </div>
+
+    <div class="inv-cta">
+      <div>
+        <h3>Don't see what you need? We'll source it.</h3>
+        <p>Tell us your project specs &mdash; tonnage, BTU, gallons, square footage &mdash; and our specialists will price the right system, including supply &amp; install.</p>
+      </div>
+      <a href="#contact" class="btn btn-primary" style="background:var(--sun);color:#3a2400;box-shadow:none">Get a custom quote <svg width="16" height="16"><use href="#ic-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Why Klimate ═══════════════ -->
+<section id="about" class="why" data-screen-label="Why Klimate / About">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <span class="eyebrow" style="color:var(--sun)">Why Klimate</span>
+        <h2>Engineered installs.<br>Honest service.<br>Built to last in the tropics.</h2>
+        <p>Klimate Contractors Limited has been Jamaica's HVAC industry leader for over a decade. We're an authorized partner for Rheem, York, Panasonic, Samsung and Windy &mdash; with full in-house engineering, refrigeration and mechanical-service teams.</p>
+        <ul>
+          <li><span class="check"><svg width="16" height="16"><use href="#ic-shield"/></svg></span><div><b>Manufacturer warranties</b><span>Up to 10-year compressor coverage on every install.</span></div></li>
+          <li><span class="check"><svg width="16" height="16"><use href="#ic-medal"/></svg></span><div><b>Licensed technicians</b><span>HVAC-certified, insured, and continuously trained.</span></div></li>
+          <li><span class="check"><svg width="16" height="16"><use href="#ic-truck"/></svg></span><div><b>Island-wide service</b><span>Same-day dispatch across Kingston to Negril.</span></div></li>
+          <li><span class="check"><svg width="16" height="16"><use href="#ic-leaf"/></svg></span><div><b>Energy-first design</b><span>R-454B &amp; R-32 inverter systems, up to 21.3 IEER.</span></div></li>
+        </ul>
+      </div>
+      <div class="stats-card">
+        <div class="stat"><b>13+</b><span>Years of HVAC excellence in Jamaica</span></div>
+        <div class="stat"><b>2.4k</b><span>Residential &amp; commercial installs</span></div>
+        <hr>
+        <div class="stat"><b>64+</b><span>Hotel-room VRF deployments at Royalton</span></div>
+        <div class="stat"><b>24/7</b><span>Emergency commercial dispatch</span></div>
+        <hr>
+        <div class="stat"><b>98%</b><span>First-visit repair completion rate</span></div>
+        <div class="stat"><b>4.9★</b><span>Average customer rating</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Brands ═══════════════ -->
+<section id="brands" class="brands" data-screen-label="Brands">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="left">
+        <span class="eyebrow">Brands we carry</span>
+        <h2>Authorized partners for the world's most-trusted HVAC manufacturers.</h2>
+      </div>
+    </div>
+    <div class="brand-grid">
+      <div class="brand">RHEEM</div>
+      <div class="brand" style="font-style:italic">YORK</div>
+      <div class="brand">Panasonic</div>
+      <div class="brand">SAMSUNG</div>
+      <div class="brand">WINDY</div>
+      <div class="brand">ZERO</div>
+      <div class="brand" style="color:var(--blue-700)">KOMAT</div>
+      <div class="brand" style="color:var(--blue-700)">MIZER</div>
+      <div class="brand">CENTON</div>
+      <div class="brand">JNOD</div>
+      <div class="brand">PEDROLLO</div>
+      <div class="brand">GLONG</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Projects ═══════════════ -->
+<section id="projects" class="projects" data-screen-label="Projects">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="left">
+        <span class="eyebrow">Recent work</span>
+        <h2>From boutique villas to 1,000-room resorts &mdash; we've cooled them all.</h2>
+      </div>
+      <div class="right"><a href="#contact">Start your project <svg width="16" height="16" style="vertical-align:-3px"><use href="#ic-arrow"/></svg></a></div>
+    </div>
+    <div class="proj-grid">
+      <div class="proj p1">
+        <div class="ill"><svg viewBox="0 0 64 64"><use href="#ic-snow"/></svg></div>
+        <div class="meta">
+          <span class="tag">Hospitality · 2025</span>
+          <div class="ttl">Royalton Negril<br>VRF retrofit · 64 indoor units</div>
+        </div>
+      </div>
+      <div class="proj p2">
+        <div class="ill"><svg viewBox="0 0 24 24"><use href="#ic-cube"/></svg></div>
+        <div class="meta">
+          <span class="tag">Cold Storage · 2024</span>
+          <div class="ttl">Discovery Bay Farms · 40ft container unit</div>
+        </div>
+      </div>
+      <div class="proj p3">
+        <div class="ill"><svg viewBox="0 0 24 24"><use href="#ic-flame"/></svg></div>
+        <div class="meta">
+          <span class="tag">Residential · 2025</span>
+          <div class="ttl">KOMAT tankless rollout · 80 villas</div>
+        </div>
+      </div>
+      <div class="proj p4">
+        <div class="ill"><svg viewBox="0 0 24 24"><use href="#ic-tools"/></svg></div>
+        <div class="meta">
+          <span class="tag">Commercial · 2024</span>
+          <div class="ttl">NCB · Service contract, 32 branches</div>
+        </div>
+      </div>
+      <div class="proj p5">
+        <div class="ill"><svg viewBox="0 0 24 24"><use href="#ic-fan"/></svg></div>
+        <div class="meta">
+          <span class="tag">Industrial · 2025</span>
+          <div class="ttl">Noranda Bauxite · Industrial extractors</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Testimonials ═══════════════ -->
+<section class="testi" data-screen-label="Testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="left">
+        <span class="eyebrow">What clients say</span>
+        <h2>Trusted by Jamaica's most demanding operators.</h2>
+      </div>
+    </div>
+    <div class="testi-grid">
+      <div class="quote">
+        <span class="stars">★★★★★</span>
+        <p class="body">"Klimate replaced our entire VRF system over a 3-week shutdown window &mdash; no overruns, no missed rooms. Their commissioning report was spotless."</p>
+        <div class="who"><div class="av">D</div><div><b>Daniel R.</b><span>Chief Engineer · Royalton Negril</span></div></div>
+      </div>
+      <div class="quote">
+        <span class="stars">★★★★★</span>
+        <p class="body">"Same-day dispatch on a freezer breakdown saved us thousands in spoilage. Tech showed up with the exact part on the truck. Service contract renewed."</p>
+        <div class="who"><div class="av">M</div><div><b>Marsha P.</b><span>Operations Manager · Discovery Bay Farms</span></div></div>
+      </div>
+      <div class="quote">
+        <span class="stars">★★★★★</span>
+        <p class="body">"Honest pricing and they actually pulled permits. The KOMAT tankless install in our villa is silent and the hot water is genuinely instant."</p>
+        <div class="who"><div class="av">A</div><div><b>Andre &amp; Lisa</b><span>Homeowners · Ocho Rios</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Contact ═══════════════ -->
+<section id="contact" class="contact" data-screen-label="Contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="left">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Tell us about your project &mdash; we'll quote within 24 hours.</h2>
+        <p>Whether it's a single-room split for your home or a chiller plant for a hotel, we'll spec it, supply it and stand behind it.</p>
+      </div>
+    </div>
+    <div class="contact-grid">
+      <form onsubmit="event.preventDefault(); this.querySelector('.submit').textContent='Sent ✓ — we\'ll be in touch';">
+        <div class="row2">
+          <div><label>First name</label><input type="text" placeholder="Andre" required/></div>
+          <div><label>Last name</label><input type="text" placeholder="Brown"/></div>
+        </div>
+        <div class="row2">
+          <div><label>Email</label><input type="email" placeholder="andre@example.com" required/></div>
+          <div><label>Phone</label><input type="tel" placeholder="1 (876) 555-0100" required/></div>
+        </div>
+        <div class="row2">
+          <div>
+            <label>I'm interested in</label>
+            <select>
+              <option>Air Conditioning — Residential</option>
+              <option>Air Conditioning — Commercial / VRF</option>
+              <option>Cold Storage / Refrigeration</option>
+              <option>Water Heaters</option>
+              <option>Fans / Ventilation</option>
+              <option>Water Pumps</option>
+              <option>Service / Maintenance Contract</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label>Parish / Location</label>
+            <select>
+              <option>St. Ann</option><option>Kingston</option><option>St. Andrew</option>
+              <option>St. James</option><option>St. Catherine</option><option>Manchester</option>
+              <option>Trelawny</option><option>Westmoreland</option><option>Hanover</option>
+              <option>Portland</option><option>St. Thomas</option><option>St. Mary</option>
+              <option>St. Elizabeth</option><option>Clarendon</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label>Project details</label>
+          <textarea placeholder="Tell us a bit about the space — square footage, number of rooms, BTU requirements if known…"></textarea>
+        </div>
+        <button class="submit" type="submit">Request a quote <svg width="14" height="14" style="vertical-align:-2px;margin-left:6px"><use href="#ic-arrow"/></svg></button>
+        <p style="font-size:12.5px;color:var(--muted);margin-top:4px">By submitting you agree to be contacted by Klimate Contractors Limited regarding your enquiry.</p>
+      </form>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="ic"><svg width="20" height="20"><use href="#ic-phone"/></svg></div>
+          <div>
+            <b>Call us</b>
+            <a href="tel:+18769135679">1 (876) 913-5679</a>
+            <a href="tel:+18768748675">1 (876) 874-8675</a>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="ic"><svg width="20" height="20"><use href="#ic-mail"/></svg></div>
+          <div>
+            <b>Email</b>
+            <a href="mailto:info@klimatejamaica.com">info@klimatejamaica.com</a>
+            <a href="mailto:klimatecl@gmail.com">klimatecl@gmail.com</a>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="ic"><svg width="20" height="20"><use href="#ic-pin"/></svg></div>
+          <div>
+            <b>Visit us</b>
+            <span>Discovery Bay, St. Ann, Jamaica</span>
+            <a href="#" style="color:var(--blue-700);font-weight:600;margin-top:4px">Get directions →</a>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="ic"><svg width="20" height="20"><use href="#ic-clock"/></svg></div>
+          <div>
+            <b>Hours</b>
+            <span>Mon–Fri · 8:00am – 5:00pm</span>
+            <span>Sat · 9:00am – 2:00pm</span>
+            <span style="color:var(--blue-700);font-weight:600">24/7 emergency commercial dispatch</span>
+          </div>
+        </div>
+        <div class="map" aria-label="Discovery Bay, St. Ann">
+          <div class="pin"></div>
+          <div class="label">Discovery Bay, St. Ann</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ Footer ═══════════════ -->
+<footer data-screen-label="Footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#" class="klimate-logo" style="display:inline-flex">
+          <img class="klimate-lockup" src="assets/klimate-logo.png" alt="Klimate Contractors Limited" style="height:48px;filter:brightness(0) invert(1)" />
+        </a>
+        <p style="margin-top:18px;max-width:340px;font-size:14px;line-height:1.6">Jamaica's industry-standard HVAC, refrigeration and mechanical service provider. Authorized partner for Rheem, York, Panasonic, Samsung &amp; Windy.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg width="18" height="18"><use href="#ic-ig"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="18" height="18"><use href="#ic-fb"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="18" height="18"><use href="#ic-wa"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">Air Conditioners</a></li>
+          <li><a href="shop.html">Cold Storage</a></li>
+          <li><a href="shop.html">Water Heaters</a></li>
+          <li><a href="shop.html">Fans &amp; Ventilation</a></li>
+          <li><a href="shop.html">Extractor Fans</a></li>
+          <li><a href="shop.html">Water Pumps</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Installation</a></li>
+          <li><a href="#services">Service &amp; Repair</a></li>
+          <li><a href="#services">VRF Engineering</a></li>
+          <li><a href="#services">Refrigeration</a></li>
+          <li><a href="#services">Maintenance Plans</a></li>
+          <li><a href="#contact">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#brands">Brands</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Warranty</a></li>
+          <li><a href="#contact">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Klimate Contractors Limited. All rights reserved.</span>
+      <span>Discovery Bay, St. Ann, Jamaica · 1 (876) 913-5679</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/18768748675" class="wa" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28"><use href="#ic-wa"/></svg>
+</a>
+
+<script>
+  // Category filtering
+  (function(){
+    const bar = document.getElementById('catBar');
+    const grid = document.getElementById('prodGrid');
+    if(!bar || !grid) return;
+    function setCat(cat){
+      bar.querySelectorAll('.cat-chip').forEach(c=>{
+        c.classList.toggle('active', c.dataset.cat===cat);
+      });
+      grid.querySelectorAll('.prod').forEach(p=>{
+        const show = (cat==='all') || (p.dataset.cat===cat);
+        p.classList.toggle('hidden', !show);
+      });
+    }
+    bar.addEventListener('click', e=>{
+      const btn = e.target.closest('.cat-chip');
+      if(!btn) return;
+      setCat(btn.dataset.cat);
+    });
+    document.querySelectorAll('[data-set-cat]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const cat = a.dataset.setCat;
+        setCat(cat);
+      });
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Shop — Klimate Contractors Limited</title>
+<meta name="description" content="Browse the full Klimate Contractors inventory: air conditioners, cold storage, water heaters, fans, extractors, water pumps, generators and more." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Archivo:wght@500;600;700;800;900&family=Archivo:ital,wght@1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue-900:#0a2c5c; --blue-800:#0d3a7a; --blue-700:#0f4ea8;
+    --blue:#1268d4; --blue-500:#1f7be8; --blue-300:#7fb5f0; --blue-50:#eaf3fc;
+    --sun:#f5b73d; --sun-600:#e09b1f;
+    --ink:#0c1424; --ink-2:#1d2738; --muted:#5a6473;
+    --line:#e3e8ef; --bg:#fff; --bg-2:#f5f7fb; --bg-pedestal:#eef2f7;
+    --shadow-sm:0 1px 2px rgba(15,40,90,.06), 0 2px 6px rgba(15,40,90,.04);
+    --shadow:0 6px 24px rgba(15,40,90,.08), 0 1px 3px rgba(15,40,90,.05);
+    --shadow-lg:0 24px 60px rgba(15,40,90,.18), 0 4px 12px rgba(15,40,90,.08);
+    --radius:14px; --radius-lg:22px; --maxw:1320px;
+  }
+  *{box-sizing:border-box} html,body{margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:var(--bg);
+       -webkit-font-smoothing:antialiased;line-height:1.55}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+  h1,h2,h3,h4{font-family:'Archivo',sans-serif;letter-spacing:-.02em;line-height:1.05;margin:0}
+  h1{font-weight:900;font-size:clamp(36px,4.4vw,64px)}
+  h2{font-weight:800;font-size:clamp(26px,2.6vw,36px)}
+  h3{font-weight:700;font-size:18px}
+  p{margin:0}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'Archivo',sans-serif;
+    font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--blue-700)}
+  .eyebrow::before{content:"";width:22px;height:2px;background:var(--blue);border-radius:2px}
+
+  /* Topbar + Nav (mirror index) */
+  .topbar{background:var(--ink);color:#cdd6e3;font-size:13px;border-bottom:1px solid #1a2436}
+  .topbar .row{display:flex;align-items:center;justify-content:space-between;gap:24px;height:38px}
+  .topbar a{color:#cdd6e3;display:inline-flex;align-items:center;gap:8px}
+  .topbar a:hover{color:#fff}
+  .topbar .left,.topbar .right{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+  .topbar .pill{background:var(--sun);color:#3a2400;padding:4px 10px;border-radius:999px;
+    font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+  @media (max-width:760px){.topbar .right .hide-sm{display:none}}
+
+  .klimate-logo{display:inline-flex;align-items:center;gap:10px}
+  .klimate-mark{width:42px;height:42px;flex-shrink:0;object-fit:contain}
+  .klimate-lockup{height:80px;width:auto;display:block}
+  @media (max-width:760px){.klimate-lockup{height:54px}}
+  .klimate-wordmark{font-family:'Archivo',sans-serif;font-style:italic;font-weight:900;
+    font-size:24px;color:var(--blue-700);line-height:1;letter-spacing:-.01em}
+  .klimate-wordmark sup{font-size:9px;vertical-align:super;font-weight:700}
+  .klimate-tagline{display:block;font-family:'Archivo',sans-serif;font-weight:700;
+    font-size:9px;letter-spacing:.32em;color:#5a6473;margin-top:3px}
+
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);
+    backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line)}
+  .nav .row{display:flex;align-items:center;gap:32px;height:112px}
+  .nav nav{display:flex;align-items:center;gap:6px;margin-left:auto}
+  .nav nav a{padding:10px 14px;border-radius:10px;font-weight:600;font-size:14.5px;color:var(--ink-2);
+    transition:background .18s,color .18s}
+  .nav nav a:hover{background:var(--blue-50);color:var(--blue-700)}
+  .nav nav a.active{background:var(--blue-50);color:var(--blue-700)}
+  .nav .cta{background:var(--ink);color:#fff;padding:11px 18px;border-radius:999px;
+    font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:8px;
+    transition:transform .15s,background .2s}
+  .nav .cta:hover{background:var(--blue-700);transform:translateY(-1px)}
+  .nav .menu-btn{display:none;width:42px;height:42px;border-radius:10px;border:1px solid var(--line);align-items:center;justify-content:center}
+  @media (max-width:980px){.nav nav{display:none}.nav .menu-btn{display:inline-flex}}
+
+  /* Shop hero */
+  .shop-hero{position:relative;overflow:hidden;
+    background:linear-gradient(120deg,var(--blue-900) 0%,var(--blue-700) 55%,var(--blue) 100%);
+    color:#fff;padding:64px 0 88px}
+  .shop-hero::before{content:"";position:absolute;inset:0;
+    background:radial-gradient(700px 400px at 90% 0%,rgba(245,183,61,.18),transparent 60%),
+               radial-gradient(500px 300px at 0% 100%,rgba(127,181,240,.18),transparent 60%);
+    pointer-events:none}
+  .shop-hero .wrap{position:relative;z-index:1}
+  .crumbs{font-size:13px;color:rgba(255,255,255,.72);display:flex;gap:8px;align-items:center;margin-bottom:22px}
+  .crumbs a:hover{color:#fff}
+  .crumbs span{opacity:.5}
+  .shop-hero h1{font-size:clamp(40px,5vw,68px);max-width:14ch}
+  .shop-hero h1 em{font-style:italic;color:var(--sun);font-weight:900}
+  .shop-hero p.lede{margin-top:18px;max-width:60ch;font-size:18px;color:rgba(255,255,255,.85)}
+  .hero-stats{display:flex;gap:36px;margin-top:36px;flex-wrap:wrap}
+  .hero-stats div b{display:block;font-family:'Archivo',sans-serif;font-weight:900;
+    font-size:30px;color:var(--sun)}
+  .hero-stats div span{font-size:13px;color:rgba(255,255,255,.7);
+    text-transform:uppercase;letter-spacing:.12em;font-weight:600}
+
+  /* Shop layout */
+  .shop-wrap{padding:32px 0 80px;background:var(--bg-2)}
+  .shop-grid{display:grid;grid-template-columns:280px 1fr;gap:32px;align-items:start}
+  @media (max-width:980px){.shop-grid{grid-template-columns:1fr}}
+
+  /* Sidebar */
+  aside.sidebar{position:sticky;top:96px;background:#fff;border:1px solid var(--line);
+    border-radius:var(--radius-lg);padding:8px;box-shadow:var(--shadow-sm)}
+  aside.sidebar h4{font-family:'Archivo',sans-serif;font-weight:700;font-size:11px;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+    padding:14px 16px 8px}
+  .cat-list{display:flex;flex-direction:column;gap:2px;padding:0 6px 8px}
+  .cat-list button{display:flex;align-items:center;gap:12px;width:100%;text-align:left;
+    padding:11px 12px;border-radius:10px;font-weight:600;font-size:14.5px;color:var(--ink-2);
+    transition:background .15s,color .15s}
+  .cat-list button .ic{width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;
+    background:var(--blue-50);border-radius:8px;color:var(--blue-700);flex-shrink:0}
+  .cat-list button .count{margin-left:auto;font-size:12px;color:var(--muted);font-weight:600}
+  .cat-list button:hover{background:var(--bg-2)}
+  .cat-list button.active{background:var(--blue-700);color:#fff}
+  .cat-list button.active .ic{background:rgba(255,255,255,.18);color:#fff}
+  .cat-list button.active .count{color:rgba(255,255,255,.78)}
+  .sidebar-section{padding:14px 16px 18px;border-top:1px solid var(--line)}
+  .filter-toggles{display:flex;flex-direction:column;gap:8px}
+  .filter-toggles label{display:flex;align-items:center;gap:10px;font-size:14px;cursor:pointer;color:var(--ink-2)}
+  .filter-toggles input{accent-color:var(--blue-700);width:16px;height:16px}
+  @media (max-width:980px){
+    aside.sidebar{position:static}
+    .cat-list{flex-direction:row;overflow-x:auto;gap:8px;padding:8px;scrollbar-width:none}
+    .cat-list::-webkit-scrollbar{display:none}
+    .cat-list button{flex:0 0 auto;white-space:nowrap}
+    .cat-list button .count{display:none}
+    aside.sidebar h4{display:none}
+    .sidebar-section{display:none}
+  }
+
+  /* Toolbar */
+  .toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:#fff;
+    border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin-bottom:20px;
+    box-shadow:var(--shadow-sm)}
+  .toolbar .search{flex:1;min-width:240px;position:relative}
+  .toolbar .search input{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 14px 10px 38px;
+    font-size:14.5px;font-family:inherit;background:var(--bg-2);transition:border-color .15s,background .15s}
+  .toolbar .search input:focus{outline:none;border-color:var(--blue);background:#fff}
+  .toolbar .search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted)}
+  .toolbar .count-text{color:var(--muted);font-size:14px;font-weight:600;white-space:nowrap}
+  .toolbar select{border:1px solid var(--line);border-radius:10px;padding:9px 32px 9px 12px;
+    font-size:14px;font-family:inherit;background:#fff;font-weight:600;color:var(--ink-2);cursor:pointer;
+    appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%235a6473' stroke-width='2.5'><polyline points='6 9 12 15 18 9'/></svg>");
+    background-repeat:no-repeat;background-position:right 10px center}
+
+  /* Product grid */
+  .prods{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+  .prod{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);
+    overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s,border-color .2s;
+    position:relative}
+  .prod:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#cfdbeb}
+  .prod .img{aspect-ratio:1/1;background:linear-gradient(180deg,#fff 60%,var(--bg-pedestal) 60%);
+    display:flex;align-items:center;justify-content:center;padding:18px;position:relative;overflow:hidden}
+  .prod .img img{max-width:90%;max-height:90%;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(15,40,90,.14))}
+  .prod .img.placeholder{background:linear-gradient(135deg,var(--blue-50),#fff 70%,var(--bg-pedestal))}
+  .prod .img.placeholder svg{width:62%;height:62%;opacity:.85}
+  .prod .badges{position:absolute;top:12px;left:12px;display:flex;flex-direction:column;gap:6px;z-index:2}
+  .badge{font-family:'Archivo',sans-serif;font-weight:800;font-size:10.5px;
+    letter-spacing:.1em;text-transform:uppercase;padding:5px 9px;border-radius:6px;color:#fff}
+  .badge.sale{background:var(--sun);color:#3a2400}
+  .badge.new{background:var(--blue-700)}
+  .badge.exclusive{background:var(--ink)}
+  .badge.sold{background:#7d859b}
+  .prod-fav{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:999px;
+    background:rgba(255,255,255,.92);border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;color:var(--muted);
+    transition:color .15s,background .15s;z-index:2}
+  .prod-fav:hover{color:#e35454;background:#fff}
+  .prod .info{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+  .prod .brand{font-family:'Archivo',sans-serif;font-weight:700;font-size:11px;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--blue-700)}
+  .prod .name{font-family:'Archivo',sans-serif;font-weight:700;font-size:15.5px;line-height:1.25;
+    color:var(--ink);text-wrap:pretty;min-height:38px}
+  .prod .meta{font-size:12.5px;color:var(--muted);margin-top:2px}
+  .prod .price-row{display:flex;align-items:baseline;justify-content:space-between;margin-top:10px;gap:10px}
+  .prod .price{font-family:'Archivo',sans-serif;font-weight:800;font-size:19px;color:var(--ink)}
+  .prod .price small{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.06em}
+  .prod .stock{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;
+    color:#1d8a4f;letter-spacing:.04em}
+  .prod .stock.out{color:#a35a25}
+  .prod .stock::before{content:"";width:7px;height:7px;border-radius:999px;background:currentColor}
+  .prod .actions{display:flex;gap:8px;margin-top:14px}
+  .prod .actions .qbtn{flex:1;background:var(--ink);color:#fff;padding:10px 12px;border-radius:10px;
+    font-weight:700;font-size:13px;display:inline-flex;align-items:center;justify-content:center;gap:6px;
+    transition:background .15s}
+  .prod .actions .qbtn:hover{background:var(--blue-700)}
+  .prod .actions .wbtn{width:42px;background:var(--blue-50);color:var(--blue-700);border-radius:10px;
+    display:inline-flex;align-items:center;justify-content:center;transition:background .15s}
+  .prod .actions .wbtn:hover{background:var(--blue);color:#fff}
+
+  .empty{padding:80px 24px;text-align:center;background:#fff;border:1px dashed var(--line);
+    border-radius:var(--radius-lg);color:var(--muted)}
+  .empty h3{color:var(--ink);margin-bottom:8px}
+
+  /* Footer (compact) */
+  footer{background:var(--ink);color:#9fb0cf;padding:56px 0 24px;margin-top:0}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px}
+  footer h4{color:#fff;font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;
+    letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px}
+  footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+  footer a:hover{color:#fff}
+  footer .legal{margin-top:42px;border-top:1px solid #1d2738;padding-top:22px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:#7d89a3}
+  footer .klimate-wordmark{color:#fff}
+  footer .klimate-tagline{color:#7d89a3}
+  @media (max-width:880px){.foot-grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.foot-grid{grid-template-columns:1fr}}
+
+  /* Floating WhatsApp */
+  .wa{position:fixed;right:20px;bottom:20px;z-index:60;width:56px;height:56px;border-radius:999px;
+    background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 12px 28px rgba(37,211,102,.4)}
+  .wa:hover{transform:scale(1.06)}
+</style>
+</head>
+<body>
+
+<!-- icon defs -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="ic-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="ic-heart" viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9C.86 8.6 3.4 5 7 5c2 0 3.5 1 5 3 1.5-2 3-3 5-3 3.6 0 6.14 3.6 4.5 7-2.5 4.65-9.5 9-9.5 9z" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="ic-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.5a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.5L21 8H6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="20" r="1.5" fill="currentColor"/><circle cx="17.5" cy="20" r="1.5" fill="currentColor"/></symbol>
+    <symbol id="ic-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.7.6 2.5a2 2 0 0 1-.4 2L8 9.6a16 16 0 0 0 6 6l1.4-1.3a2 2 0 0 1 2.1-.5c.8.3 1.6.5 2.5.6A2 2 0 0 1 22 16.9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-mail" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="ic-pin" viewBox="0 0 24 24"><path d="M12 22s7-7 7-12a7 7 0 1 0-14 0c0 5 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></symbol>
+    <symbol id="ic-wa" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3 17l-1.4 5.2 5.4-1.4A11 11 0 1 0 20.5 3.5zM12 20.5a8.5 8.5 0 0 1-4.3-1.2l-.3-.2-3.2.8.9-3.1-.2-.3a8.5 8.5 0 1 1 7.1 4zm4.7-6.4c-.3-.1-1.5-.7-1.7-.8s-.4 0-.5.2-.6.7-.7.9-.3.1-.5 0a7 7 0 0 1-3.4-3c-.3-.5.3-.4.8-1.4.1-.2 0-.4 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4 0-.6.3a2.4 2.4 0 0 0-.7 1.8 4.1 4.1 0 0 0 .9 2.2 9.5 9.5 0 0 0 3.6 3.2c.5.2.9.4 1.2.5a2.9 2.9 0 0 0 1.3.1c.4-.1 1.2-.5 1.4-1s.2-.9.1-1z" fill="currentColor"/></symbol>
+    <symbol id="ic-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="ic-fb" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h-1z" fill="currentColor"/></symbol>
+    <symbol id="ic-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <!-- category icons -->
+    <symbol id="cat-all" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="cat-ac" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 14v2M9 14v3M15 14v3M19 14v2M5 9h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="cat-cold" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 11h16" stroke="currentColor" stroke-width="2"/><path d="M7 7v1M7 15v1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="cat-heater" viewBox="0 0 24 24"><path d="M12 2c2 3 5 5 5 9a5 5 0 0 1-10 0c0-4 3-6 5-9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="cat-fan" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2" fill="currentColor"/><path d="M12 10c-3-2-7-2-7 0s4 2 7 0zm0 4c3 2 7 2 7 0s-4-2-7 0zm-2-2c-2-3-2-7 0-7s2 4 0 7zm4 0c2 3 2 7 0 7s-2-4 0-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="cat-extractor" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 9V5M15 12h4M12 15v4M9 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="cat-pump" viewBox="0 0 24 24"><circle cx="9" cy="13" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 13h6M17 9v8M14 5l6-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="cat-gen" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="12" r="2" fill="currentColor"/><path d="M14 10h4M14 14h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="cat-tank" viewBox="0 0 24 24"><path d="M5 5h14v14a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V5z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 9h14M9 5V3h6v2" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="cat-curtain" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="4" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 8v12M9 8v10M13 8v12M17 8v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="cat-purify" viewBox="0 0 24 24"><path d="M12 2c4 6 7 9 7 13a7 7 0 0 1-14 0c0-4 3-7 7-13z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 14a3 3 0 0 0 3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="cat-blender" viewBox="0 0 24 24"><path d="M8 3h8l-1 7H9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><rect x="7" y="10" width="10" height="9" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 19v2h6v-2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <!-- placeholder visuals (Klimate IG-only items) -->
+    <symbol id="ph-vrf" viewBox="0 0 200 200">
+      <rect x="50" y="30" width="100" height="140" rx="8" fill="#cfdbeb" stroke="#0f4ea8" stroke-width="3"/>
+      <rect x="60" y="42" width="80" height="32" rx="3" fill="#fff"/>
+      <rect x="60" y="80" width="80" height="32" rx="3" fill="#fff"/>
+      <rect x="60" y="118" width="80" height="42" rx="3" fill="#fff"/>
+      <circle cx="100" cy="139" r="14" fill="none" stroke="#0f4ea8" stroke-width="2.5"/>
+    </symbol>
+    <symbol id="ph-coldroom" viewBox="0 0 200 200">
+      <rect x="20" y="50" width="160" height="110" rx="6" fill="#eaf3fc" stroke="#0f4ea8" stroke-width="3"/>
+      <rect x="40" y="70" width="50" height="80" rx="3" fill="#fff" stroke="#0f4ea8" stroke-width="2"/>
+      <circle cx="135" cy="110" r="22" fill="#fff" stroke="#0f4ea8" stroke-width="2.5"/>
+      <path d="M135 96v28M121 110h28" stroke="#1268d4" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ph-mizer" viewBox="0 0 200 200">
+      <rect x="20" y="60" width="160" height="100" rx="4" fill="#0a2c5c"/>
+      <rect x="35" y="75" width="35" height="70" rx="2" fill="#1268d4"/>
+      <rect x="80" y="75" width="35" height="70" rx="2" fill="#7fb5f0"/>
+      <rect x="125" y="75" width="40" height="70" rx="2" fill="#1268d4"/>
+      <text x="100" y="50" text-anchor="middle" font-family="Archivo" font-weight="800" font-size="18" fill="#0a2c5c">MIZER</text>
+    </symbol>
+    <symbol id="ph-tankless" viewBox="0 0 200 200">
+      <rect x="60" y="20" width="80" height="160" rx="6" fill="#1d2738"/>
+      <rect x="70" y="80" width="60" height="34" rx="3" fill="#0a2c5c"/>
+      <text x="100" y="103" text-anchor="middle" font-family="Archivo" font-weight="800" font-size="18" fill="#f5b73d">48°</text>
+      <circle cx="80" cy="140" r="3" fill="#7fb5f0"/><circle cx="100" cy="140" r="3" fill="#7fb5f0"/><circle cx="120" cy="140" r="3" fill="#7fb5f0"/>
+    </symbol>
+    <symbol id="ph-extractor" viewBox="0 0 200 200">
+      <rect x="30" y="30" width="140" height="140" rx="6" fill="#cfdbeb" stroke="#0f4ea8" stroke-width="3"/>
+      <circle cx="100" cy="100" r="50" fill="#fff" stroke="#0f4ea8" stroke-width="2.5"/>
+      <path d="M100 60 Q120 80 100 100 Q80 120 100 140 M60 100 Q80 80 100 100 Q120 120 140 100" fill="none" stroke="#0f4ea8" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="100" cy="100" r="8" fill="#0f4ea8"/>
+      <circle cx="42" cy="42" r="3" fill="#0f4ea8"/><circle cx="158" cy="42" r="3" fill="#0f4ea8"/>
+      <circle cx="42" cy="158" r="3" fill="#0f4ea8"/><circle cx="158" cy="158" r="3" fill="#0f4ea8"/>
+    </symbol>
+    <symbol id="ph-ductfan" viewBox="0 0 200 200">
+      <rect x="50" y="60" width="100" height="80" rx="3" fill="#fff" stroke="#0f4ea8" stroke-width="3"/>
+      <path d="M55 65l45 30 45-30" stroke="#7fb5f0" stroke-width="2" fill="none"/>
+      <rect x="80" y="120" width="40" height="50" rx="3" fill="#1d2738"/>
+      <circle cx="100" cy="145" r="14" fill="none" stroke="#7fb5f0" stroke-width="2"/>
+    </symbol>
+    <symbol id="ph-tank" viewBox="0 0 200 200">
+      <rect x="70" y="30" width="60" height="140" rx="30" fill="#1268d4" stroke="#0a2c5c" stroke-width="3"/>
+      <rect x="90" y="170" width="20" height="14" fill="#0a2c5c"/>
+      <circle cx="100" cy="60" r="8" fill="#7fb5f0"/>
+      <text x="100" y="115" text-anchor="middle" font-family="Archivo" font-weight="800" font-size="18" fill="#fff">H2O</text>
+    </symbol>
+    <symbol id="ph-pump-sub" viewBox="0 0 200 200">
+      <rect x="75" y="20" width="50" height="160" rx="6" fill="#cfdbeb" stroke="#0f4ea8" stroke-width="3"/>
+      <rect x="82" y="40" width="36" height="30" rx="3" fill="#1268d4"/>
+      <rect x="82" y="80" width="36" height="30" rx="3" fill="#7fb5f0"/>
+      <rect x="82" y="120" width="36" height="30" rx="3" fill="#1268d4"/>
+      <circle cx="100" cy="165" r="6" fill="#0a2c5c"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- Topbar -->
+<div class="topbar">
+  <div class="wrap row">
+    <div class="left">
+      <a href="tel:+18769135679"><svg width="14" height="14"><use href="#ic-phone"/></svg> 1 (876) 913-5679</a>
+      <a href="tel:+18768748675" class="hide-sm"><svg width="14" height="14"><use href="#ic-phone"/></svg> 1 (876) 874-8675</a>
+      <a href="mailto:klimatecl@gmail.com" class="hide-sm"><svg width="14" height="14"><use href="#ic-mail"/></svg> klimatecl@gmail.com</a>
+    </div>
+    <div class="right">
+      <span class="hide-sm"><svg width="14" height="14" style="vertical-align:-2px"><use href="#ic-pin"/></svg> Discovery Bay, St. Ann</span>
+      <span class="pill">Free site survey</span>
+    </div>
+  </div>
+</div>
+
+<!-- Nav -->
+<header class="nav">
+  <div class="wrap row">
+    <a href="index.html" class="klimate-logo" aria-label="Klimate Contractors Limited home">
+      <img class="klimate-lockup" src="assets/klimate-logo.png" alt="Klimate Contractors Limited" />
+    </a>
+    <nav>
+      <a href="index.html#services">Services</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#brands">Brands</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="cta">Book Service <svg width="16" height="16"><use href="#ic-arrow"/></svg></a>
+    <button class="menu-btn" aria-label="Open menu"><svg width="20" height="20"><use href="#ic-menu"/></svg></button>
+  </div>
+</header>
+
+<!-- Shop hero -->
+<section class="shop-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a><span>›</span><span>Shop</span></div>
+    <span class="eyebrow" style="color:var(--sun)">The Klimate Inventory</span>
+    <h1>Everything you need to <em>cool, heat &amp; move air</em>.</h1>
+    <p class="lede">From 9,000 BTU split inverters to 25-ton commercial packaged units, walk-in cold rooms, tankless water heaters, industrial fans and high-pressure water pumps — Jamaica's broadest HVAC inventory, backed by manufacturer warranties and on-island service.</p>
+    <div class="hero-stats">
+      <div><b>180+</b><span>Products in stock</span></div>
+      <div><b>14</b><span>Brands carried</span></div>
+      <div><b>3-5 day</b><span>Island-wide delivery</span></div>
+      <div><b>1 (876) 913-5679</b><span>Talk to a tech</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Shop body -->
+<section class="shop-wrap">
+  <div class="wrap">
+    <div class="shop-grid">
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h4>Browse Categories</h4>
+        <div class="cat-list" id="catList">
+          <button data-cat="all" class="active"><span class="ic"><svg width="14" height="14"><use href="#cat-all"/></svg></span> All Products <span class="count" data-count="all"></span></button>
+          <button data-cat="ac"><span class="ic"><svg width="14" height="14"><use href="#cat-ac"/></svg></span> Air Conditioners <span class="count" data-count="ac"></span></button>
+          <button data-cat="cold"><span class="ic"><svg width="14" height="14"><use href="#cat-cold"/></svg></span> Cold Storage <span class="count" data-count="cold"></span></button>
+          <button data-cat="heater"><span class="ic"><svg width="14" height="14"><use href="#cat-heater"/></svg></span> Water Heaters <span class="count" data-count="heater"></span></button>
+          <button data-cat="fan"><span class="ic"><svg width="14" height="14"><use href="#cat-fan"/></svg></span> Fans <span class="count" data-count="fan"></span></button>
+          <button data-cat="extractor"><span class="ic"><svg width="14" height="14"><use href="#cat-extractor"/></svg></span> Extractor Fans <span class="count" data-count="extractor"></span></button>
+          <button data-cat="pump"><span class="ic"><svg width="14" height="14"><use href="#cat-pump"/></svg></span> Water Pumps <span class="count" data-count="pump"></span></button>
+          <button data-cat="gen"><span class="ic"><svg width="14" height="14"><use href="#cat-gen"/></svg></span> Generators <span class="count" data-count="gen"></span></button>
+          <button data-cat="tank"><span class="ic"><svg width="14" height="14"><use href="#cat-tank"/></svg></span> Pressure &amp; Water Tanks <span class="count" data-count="tank"></span></button>
+          <button data-cat="curtain"><span class="ic"><svg width="14" height="14"><use href="#cat-curtain"/></svg></span> Air Curtains &amp; Coolers <span class="count" data-count="curtain"></span></button>
+          <button data-cat="purify"><span class="ic"><svg width="14" height="14"><use href="#cat-purify"/></svg></span> Water Purification <span class="count" data-count="purify"></span></button>
+          <button data-cat="blender"><span class="ic"><svg width="14" height="14"><use href="#cat-blender"/></svg></span> Blenders <span class="count" data-count="blender"></span></button>
+        </div>
+
+        <div class="sidebar-section">
+          <h4 style="padding:0 0 10px">Filter</h4>
+          <div class="filter-toggles">
+            <label><input type="checkbox" id="filterSale"> On sale only</label>
+            <label><input type="checkbox" id="filterNew"> New arrivals</label>
+            <label><input type="checkbox" id="filterStock"> In stock only</label>
+            <label><input type="checkbox" id="filterInverter"> Inverter only (AC)</label>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <h4 style="padding:0 0 10px">Need Help?</h4>
+          <p style="font-size:13.5px;color:var(--muted);margin-bottom:12px">Talk to a Klimate tech for sizing &amp; installation.</p>
+          <a href="https://wa.me/18768748675" style="display:flex;align-items:center;gap:8px;background:#25d366;color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;font-size:13.5px;justify-content:center">
+            <svg width="16" height="16"><use href="#ic-wa"/></svg> WhatsApp Us
+          </a>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <div>
+        <!-- Toolbar -->
+        <div class="toolbar">
+          <div class="search">
+            <svg width="16" height="16"><use href="#ic-search"/></svg>
+            <input type="search" id="searchInput" placeholder="Search 180+ products — try '12000 BTU', 'Mizer', 'tankless'…" />
+          </div>
+          <span class="count-text" id="countText">Showing all products</span>
+          <select id="sortSel" aria-label="Sort">
+            <option value="featured">Featured</option>
+            <option value="az">Alphabetical, A–Z</option>
+            <option value="za">Alphabetical, Z–A</option>
+            <option value="lo">Price, low to high</option>
+            <option value="hi">Price, high to low</option>
+            <option value="new">Newest</option>
+          </select>
+        </div>
+
+        <div class="prods" id="prodGrid"></div>
+        <div class="empty" id="empty" style="display:none">
+          <h3>No products match those filters</h3>
+          <p>Try clearing search or selecting a different category.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="klimate-logo" style="display:inline-flex">
+          <img class="klimate-lockup" src="assets/klimate-logo.png" alt="Klimate Contractors Limited" style="height:48px;filter:brightness(0) invert(1)" />
+        </div>
+        <p style="margin:18px 0 0;max-width:36ch;color:#9fb0cf">Jamaica's full-stack HVAC, refrigeration and cold storage provider. Discovery Bay, St. Ann.</p>
+        <div style="display:flex;gap:10px;margin-top:14px">
+          <a href="https://instagram.com/klimatecontractorsltd" aria-label="Instagram" style="width:38px;height:38px;border-radius:10px;background:#1a2436;display:flex;align-items:center;justify-content:center"><svg width="18" height="18"><use href="#ic-ig"/></svg></a>
+          <a href="#" aria-label="Facebook" style="width:38px;height:38px;border-radius:10px;background:#1a2436;display:flex;align-items:center;justify-content:center"><svg width="18" height="18"><use href="#ic-fb"/></svg></a>
+          <a href="https://wa.me/18768748675" aria-label="WhatsApp" style="width:38px;height:38px;border-radius:10px;background:#1a2436;display:flex;align-items:center;justify-content:center"><svg width="18" height="18"><use href="#ic-wa"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All Products</a></li>
+          <li><a href="shop.html#ac">Air Conditioners</a></li>
+          <li><a href="shop.html#cold">Cold Storage</a></li>
+          <li><a href="shop.html#heater">Water Heaters</a></li>
+          <li><a href="shop.html#fan">Fans</a></li>
+          <li><a href="shop.html#pump">Water Pumps</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">Commercial AC</a></li>
+          <li><a href="index.html#services">Residential AC</a></li>
+          <li><a href="index.html#services">VRF Systems</a></li>
+          <li><a href="index.html#services">Service &amp; Repairs</a></li>
+          <li><a href="index.html#services">Cold Storage</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+18769135679">1 (876) 913-5679</a></li>
+          <li><a href="tel:+18768748675">1 (876) 874-8675</a></li>
+          <li><a href="mailto:klimatecl@gmail.com">klimatecl@gmail.com</a></li>
+          <li>Discovery Bay, St. Ann</li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Klimate Contractors Limited. All rights reserved.</span>
+      <span>klimatejamaica.com · @klimatecontractorsltd</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/18768748675" class="wa" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28"><use href="#ic-wa"/></svg>
+</a>
+
+<script>
+/* ─────────── Product catalog ───────────
+   Sources: carlisaenterprises.com (real product names + image URLs)
+   + Klimate Instagram screenshots (Z-Pro, Z-Real, VRF series, Mizer cold storage, Komat, etc).
+*/
+const C = "https://carlisaenterprises.com/cdn/shop";
+const PRODUCTS = [
+  // ========== AIR CONDITIONERS (Klimate IG branded series) ==========
+  { id:"zpro-r32-9k",  cat:"ac", brand:"Klimate Z-PRO", name:"Z-PRO Series Split AC R32 — 9,000 BTU", meta:"Wi-Fi · Gold-Fin · Refrigerant leak detection", price:55995, oldPrice:60995, badge:"new", stock:"in", inverter:true, src:"klimate", img:`${C}/files/UntitledDesign_25_22.jpg` },
+  { id:"zpro-r32-12k", cat:"ac", brand:"Klimate Z-PRO", name:"Z-PRO Series Split AC R32 — 12,000 BTU", meta:"Wi-Fi · Gold-Fin · Fire-proof electric box", price:58995, oldPrice:64995, badge:"sale", stock:"in", inverter:true, src:"klimate", img:`${C}/files/UntitledDesign_24_29.jpg` },
+  { id:"zpro-r32-18k", cat:"ac", brand:"Klimate Z-PRO", name:"Z-PRO Series Split AC R32 — 18,000 BTU", meta:"Wi-Fi · Self-clean · Quiet operation", price:81995, stock:"in", inverter:true, src:"klimate", img:`${C}/files/UntitledDesign_27_18.jpg` },
+  { id:"zpro-r32-24k", cat:"ac", brand:"Klimate Z-PRO", name:"Z-PRO Series Split AC R32 — 24,000 BTU", meta:"Wi-Fi · Inverter · For large rooms", price:101995, stock:"in", inverter:true, src:"klimate", img:`${C}/files/UntitledDesign_29_8.jpg` },
+  { id:"zpro-r32-36k", cat:"ac", brand:"Klimate Z-PRO", name:"Z-PRO Series Split AC R32 — 36,000 BTU", meta:"Wi-Fi · 3-phase ready", price:187995, stock:"in", inverter:true, src:"klimate", img:`${C}/files/UntitledDesign_29_8.jpg` },
+  { id:"zreal-12k", cat:"ac", brand:"Klimate Z-REAL", name:"Z-REAL Series 50Hz/60Hz — 12,000 BTU", meta:"Single condenser & wall-mount unit · Energy efficient", price:55995, stock:"in", inverter:true, src:"klimate", img:`${C}/files/UntitledDesign_24_29.jpg` },
+  { id:"zreal-18k", cat:"ac", brand:"Klimate Z-REAL", name:"Z-REAL Series 50Hz/60Hz — 18,000 BTU", meta:"Reduces energy costs · Precise temp control", price:76995, stock:"in", inverter:true, src:"klimate", img:`${C}/files/UntitledDesign_27_18.jpg` },
+  { id:"zreal-24k", cat:"ac", brand:"Klimate Z-REAL", name:"Z-REAL Series 50Hz/60Hz — 24,000 BTU", meta:"Inverter · For master suites & open plans", price:95995, stock:"in", inverter:true, src:"klimate", img:`${C}/files/UntitledDesign_29_8.jpg` },
+  { id:"zreal-36k", cat:"ac", brand:"Klimate Z-REAL", name:"Z-REAL Series 50Hz/60Hz — 36,000 BTU", meta:"Wi-Fi · For commercial spaces", price:179995, stock:"in", inverter:true, src:"klimate", img:`${C}/files/UntitledDesign_29_8.jpg` },
+
+  // VRF / multi-split (Klimate IG)
+  { id:"vrf-ztvm", cat:"ac", brand:"Klimate VRF", name:"VRF ZTVM-V8 PRO Series", meta:"AI self-learning · Meta 2.0 variable refrigerant · Full DC inverter", price:0, badge:"exclusive", stock:"quote", inverter:true, src:"klimate", img:null, ph:"ph-vrf" },
+  { id:"vrf-ztvc", cat:"ac", brand:"Klimate VRF", name:"VRF ZTVC Series — Variable Refrigerant Flow", meta:"Full DC inverter · Commercial & high-end residential", price:0, badge:"exclusive", stock:"quote", inverter:true, src:"klimate", img:null, ph:"ph-vrf" },
+  { id:"vrf-ctvt", cat:"ac", brand:"Klimate VRF", name:"VRF CTVT Series — Full DC Inverter", meta:"High-precision EXVs · DC motors · Heating & cooling", price:0, badge:"exclusive", stock:"quote", inverter:true, src:"klimate", img:null, ph:"ph-vrf" },
+  { id:"multi-r454b", cat:"ac", brand:"Klimate", name:"Multi Split R454B Series US", meta:"Up to 5 indoor units · Heats down to −25°C", price:0, badge:"new", stock:"quote", inverter:true, src:"klimate", img:null, ph:"ph-vrf" },
+  { id:"multi-r410a", cat:"ac", brand:"Klimate", name:"Multi Split R410A Series LATAM", meta:"Multiple indoor styles · Independent zone control", price:0, stock:"quote", inverter:true, src:"klimate", img:null, ph:"ph-vrf" },
+
+  // Carlisa Windy split units — keep popular sizes
+  { id:"windy-9k-i7",  cat:"ac", brand:"Windy", name:"Windy 9,000 BTU Inverter Split Unit (Series #7) Wi-Fi", meta:"Series #7 · 5-star reviews", price:55995, stock:"in", inverter:true, src:"carlisa", img:`${C}/products/Untitleddesign_23_cfa2c85e-b987-4506-b149-b3cc1c5962c9_480x480.png?v=1665525433` },
+  { id:"windy-9k-i9",  cat:"ac", brand:"Windy", name:"Windy 9,000 BTU Inverter Split Unit (Series #9)", meta:"Series #9 · Latest model", price:50995, stock:"in", inverter:true, src:"carlisa", img:`${C}/files/Untitleddesign_2_80c8cfbc-7886-4fe1-8cf9-02a1c8691f2c_480x480.png?v=1687027681` },
+  { id:"windy-9k-n8",  cat:"ac", brand:"Windy", name:"Windy 9,000 BTU Non-Inverter Split (Series #8)", meta:"Budget-friendly", price:41595, stock:"in", inverter:false, src:"carlisa", img:`${C}/files/Untitleddesign_27_480x480.png?v=1691586231` },
+  { id:"windy-12k-i7", cat:"ac", brand:"Windy", name:"Windy 12,000 BTU Inverter Split Unit (Series #7) Wi-Fi", meta:"Most popular · 17 reviews", price:58995, oldPrice:64995, badge:"sale", stock:"in", inverter:true, src:"carlisa", img:`${C}/products/Untitleddesign_23_504d1e42-406a-4b92-9f06-74e8952ad9cb_480x480.png?v=1665525394` },
+  { id:"windy-12k-i9", cat:"ac", brand:"Windy", name:"Windy 12,000 BTU Inverter Split Unit (Series #9)", meta:"Series #9 · 6 reviews", price:55995, stock:"in", inverter:true, src:"carlisa", img:`${C}/files/Untitleddesign_2_b20b1697-91c0-4ab0-b53e-f2c8ed0bdc7f_480x480.png?v=1687027089` },
+  { id:"windy-12k-n8", cat:"ac", brand:"Windy", name:"Windy 12,000 BTU Non-Inverter Split (Series #8)", meta:"Reliable · Cost-effective", price:46595, stock:"in", inverter:false, src:"carlisa", img:`${C}/files/Untitleddesign_27_8c6d5ca0-0550-4623-9520-944892d2834d_480x480.png?v=1691586274` },
+  { id:"windy-18k-i7", cat:"ac", brand:"Windy", name:"Windy 18,000 BTU Inverter Split Unit (Series #7) Wi-Fi", meta:"For large bedrooms", price:81995, stock:"in", inverter:true, src:"carlisa", img:`${C}/products/Untitleddesign_23_f23b1bd5-4c11-4c10-8ed7-f83f1b91b303_480x480.png?v=1665581750` },
+  { id:"windy-18k-i9", cat:"ac", brand:"Windy", name:"Windy 18,000 BTU Inverter Split Unit (Series #9)", meta:"Latest series", price:76995, stock:"in", inverter:true, src:"carlisa", img:`${C}/files/Untitleddesign_2_2ddce37b-a099-43b8-b4a6-77b46029931b_480x480.png?v=1687027646` },
+  { id:"windy-18k-n8", cat:"ac", brand:"Windy", name:"Windy 18,000 BTU Non-Inverter Split (Series #8)", meta:"Heavy-duty cooling", price:60995, stock:"in", inverter:false, src:"carlisa", img:`${C}/files/Untitleddesign_27_65ecc462-9d89-41fc-9c01-3a308d0d0ddc_480x480.png?v=1691586309` },
+  { id:"windy-24k-i7", cat:"ac", brand:"Windy", name:"Windy 24,000 BTU Inverter Split Unit (Series #7) Wi-Fi", meta:"Living rooms & open offices", price:101995, stock:"in", inverter:true, src:"carlisa", img:`${C}/products/Untitleddesign_23_6964df57-bb66-4eda-aee4-81a511489d0f_480x480.png?v=1665525364` },
+  { id:"windy-24k-i9", cat:"ac", brand:"Windy", name:"Windy 24,000 BTU Inverter Split Unit (Series #9)", meta:"Latest model · 2-ton class", price:95995, stock:"in", inverter:true, src:"carlisa", img:`${C}/files/Untitleddesign_2_4b68790c-cc2a-426d-a297-3a1c1028d96d_480x480.png?v=1687027545` },
+  { id:"windy-24k-n8", cat:"ac", brand:"Windy", name:"Windy 24,000 BTU Non-Inverter Split (Series #8)", meta:"Commercial-grade cooling", price:81995, stock:"in", inverter:false, src:"carlisa", img:`${C}/files/Untitleddesign_27_d531491f-5d58-47d5-b2e2-906aaa202dd5_480x480.png?v=1691586349` },
+  { id:"windy-32k-i9", cat:"ac", brand:"Windy", name:"Windy 32,000 BTU Inverter Split (Series #9) Wi-Fi", meta:"Large halls & retail spaces", price:140995, stock:"in", inverter:true, src:"carlisa", img:`${C}/files/Untitleddesign_2_468afcb2-555e-424e-a925-225f62d9420d_480x480.png?v=1687027606` },
+  { id:"windy-36k-i7", cat:"ac", brand:"Windy", name:"Windy 36,000 BTU Inverter Split (Series #7) Wi-Fi", meta:"3-ton commercial split", price:187995, stock:"in", inverter:true, src:"carlisa", img:`${C}/products/Untitleddesign_23_83c392b6-8c6f-4f82-92e1-d8153f6fed86_480x480.png?v=1665525334` },
+  { id:"windy-36k-i9", cat:"ac", brand:"Windy", name:"Windy 36,000 BTU Inverter Split (Series #9) Wi-Fi", meta:"3-ton · Latest series", price:179995, stock:"in", inverter:true, src:"carlisa", img:`${C}/files/Untitleddesign_2_468afcb2-555e-424e-a925-225f62d9420d_480x480.png?v=1687027606` },
+  // Window units
+  { id:"windy-12k-w", cat:"ac", brand:"Windy", name:"Windy 12,000 BTU Inverter Window Unit", meta:"Drop-in window installation", price:54995, stock:"in", inverter:true, src:"carlisa", img:`${C}/files/Copy_of_Untitled_Design_1_480x480.png?v=1774990840` },
+  { id:"windy-18k-w", cat:"ac", brand:"Windy", name:"Windy 18,000 BTU Inverter Window Unit", meta:"For studios & efficiency suites", price:83995, stock:"in", inverter:true, src:"carlisa", img:`${C}/files/Untitled_design_-_2026-03-31T145944.289_480x480.png?v=1774990678` },
+  // Cassette
+  { id:"windy-12k-cas", cat:"ac", brand:"Windy", name:"Windy 12,000 BTU Cassette Inverter Split", meta:"Drop-ceiling install · 4-way airflow", price:135995, stock:"in", inverter:true, src:"carlisa", img:`${C}/files/Untitleddesign_31_5b7b015e-d597-4adb-9975-fab0b40f28a7_480x480.png?v=1741289299` },
+  { id:"windy-18k-cas", cat:"ac", brand:"Windy", name:"Windy 18,000 BTU Cassette Inverter Split", meta:"Office grids · 4-way airflow", price:0, stock:"out", inverter:true, src:"carlisa", img:`${C}/files/Untitleddesign_30_03b5b17d-c0d3-432e-9f53-4c42605e1b3f_480x480.png?v=1741289327` },
+  // Commercial packaged (Klimate IG — Rheem branded)
+  { id:"racy-split", cat:"ac", brand:"Rheem RACY Classic", name:"RACY Commercial Split Classic — 6.5–20 Tons", meta:"Up to 11.2 EER / 14.8 IEER · R-454B", price:0, badge:"new", stock:"quote", inverter:false, src:"klimate", img:null, ph:"ph-vrf" },
+  { id:"rachyb", cat:"ac", brand:"Rheem RACHYB Resolute", name:"RACHYB Resolute Line Classic — 15–25 Ton Packaged A/C", meta:"Full MicroChannel · PlusOne ClearControl", price:0, badge:"new", stock:"quote", inverter:false, src:"klimate", img:null, ph:"ph-vrf" },
+  { id:"racgyb", cat:"ac", brand:"Rheem Renaissance", name:"RACGYB Renaissance Line Classic — 15–25 Ton", meta:"Up to 11.0 EER / 14.2 IEER · Two-stage cooling", price:0, stock:"quote", inverter:false, src:"klimate", img:null, ph:"ph-vrf" },
+  { id:"raccyc", cat:"ac", brand:"Rheem Renaissance", name:"RACCYC Renaissance Line Classic Plus — 3–5 Ton", meta:"Up to 16.2 SEER2 / 12 EER2", price:0, stock:"quote", inverter:false, src:"klimate", img:null, ph:"ph-vrf" },
+  { id:"raccyb", cat:"ac", brand:"Rheem Renaissance", name:"RACCYB Renaissance Line Classic — 3–6 Ton", meta:"Up to 13.4 SEER2 / 14.8 IEER", price:0, stock:"quote", inverter:false, src:"klimate", img:null, ph:"ph-vrf" },
+  { id:"racayb", cat:"ac", brand:"Rheem Endeavor", name:"RACAYB Endeavor Line Classic — Packaged A/C", meta:"13.4 SEER2 · 2–5 Ton", price:0, stock:"quote", inverter:false, src:"klimate", img:null, ph:"ph-vrf" },
+  { id:"racayyc", cat:"ac", brand:"Rheem Endeavor", name:"RAC(A/X)YC Endeavor Line Plus Residential Packaged", meta:"15.2 SEER2 · 2–5 Tons (7.0–17.6 kW)", price:0, stock:"quote", inverter:false, src:"klimate", img:null, ph:"ph-vrf" },
+  { id:"doas", cat:"ac", brand:"Rheem", name:"Dedicated Outdoor Air System (DOAS)", meta:"Up to 21.3 IEER · Exceeds ASHRAE 90.1-2016", price:0, badge:"new", stock:"quote", inverter:false, src:"klimate", img:null, ph:"ph-vrf" },
+
+  // ========== COLD STORAGE (Klimate IG — Mizer brand) ==========
+  { id:"mizer-stainless", cat:"cold", brand:"MIZER", name:"Stainless Steel Cold Storage Unit", meta:"−25°C to 10°C · 3m × 2m × 2.5m · 304 SS panels", price:0, badge:"exclusive", stock:"quote", src:"klimate", img:null, ph:"ph-coldroom" },
+  { id:"mizer-glass", cat:"cold", brand:"MIZER", name:"Glass Door Cold Storage Unit", meta:"−18°C to 10°C · 4 doors · 13m × 2m × 2.5m", price:0, badge:"exclusive", stock:"quote", src:"klimate", img:null, ph:"ph-mizer" },
+  { id:"mizer-solar", cat:"cold", brand:"MIZER", name:"Solar Cold Storage Unit", meta:"20-ft & 40-ft · 4.5–6.5kW · 5–12 ton cargo", price:0, badge:"new", stock:"quote", src:"klimate", img:null, ph:"ph-coldroom" },
+  { id:"mizer-container", cat:"cold", brand:"MIZER", name:"Container Cold Storage Unit", meta:"20FT/40FT · −18°C to 10°C · 5–12 tons", price:0, stock:"quote", src:"klimate", img:null, ph:"ph-mizer" },
+  { id:"mizer-smart", cat:"cold", brand:"MIZER", name:"Smart Cold Storage Unit", meta:"−25°C to 10°C · 13.2m³ · 2–3 tons capacity", price:0, badge:"new", stock:"quote", src:"klimate", img:null, ph:"ph-coldroom" },
+  { id:"mizer-walk-s", cat:"cold", brand:"MIZER", name:"Walk-in Cold Room — Small (3m³)", meta:"For meat shops & flower shops", price:0, stock:"quote", src:"klimate", img:null, ph:"ph-coldroom" },
+  { id:"mizer-walk-m", cat:"cold", brand:"MIZER", name:"Walk-in Cold Room — Medium (8m³)", meta:"Restaurants & catering facilities", price:0, stock:"quote", src:"klimate", img:null, ph:"ph-coldroom" },
+  { id:"mizer-walk-l", cat:"cold", brand:"MIZER", name:"Walk-in Cold Room — Large (20m³+)", meta:"Hotels, resorts, farms", price:0, stock:"quote", src:"klimate", img:null, ph:"ph-coldroom" },
+  { id:"compressor", cat:"cold", brand:"Klimate", name:"Refrigeration Compressor Unit", meta:"For cold storage · Various capacities", price:0, stock:"quote", src:"klimate", img:null, ph:"ph-mizer" },
+
+  // ========== WATER HEATERS ==========
+  // Klimate Komat (IG)
+  { id:"komat-tankless", cat:"heater", brand:"KOMAT", name:"KOMAT Tankless Water Heater 8.5kW", meta:"48°C display · IPX4 · Endless hot water · Wall-mount", price:42995, badge:"new", stock:"in", src:"klimate", img:null, ph:"ph-tankless" },
+  { id:"komat-instant", cat:"heater", brand:"KOMAT", name:"KOMAT Instant Tankless Heater (Single-Point)", meta:"Quick heat · Low-cost · Easy install", price:23995, stock:"in", src:"klimate", img:null, ph:"ph-tankless" },
+  { id:"komat-multi",   cat:"heater", brand:"KOMAT", name:"KOMAT Multi-Point Tankless Heater", meta:"Whole-house · 220V · Energy efficient", price:34995, stock:"in", src:"klimate", img:null, ph:"ph-tankless" },
+  // Centon (carlisa)
+  { id:"centon-4kw-s", cat:"heater", brand:"CENTON", name:"CENTON Tankless Water Heater (Single Point) 4kW 110V", meta:"Shower-only · 110V", price:23995, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_85_480x480.png?v=1772457145` },
+  { id:"centon-55-s", cat:"heater", brand:"CENTON", name:"CENTON Tankless Water Heater (Single Point) 5.5kW 220V", meta:"Higher flow · 220V", price:18995, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_85_805e57b4-455a-49ff-a1a8-744fadc21803_480x480.png?v=1772457295` },
+  { id:"centon-4kw-m", cat:"heater", brand:"CENTON", name:"CENTON Tankless Water Heater (Multi-Point) 4kW 110V", meta:"Multi-point · 110V", price:25995, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_96_480x480.png?v=1772458530` },
+  { id:"centon-55-m", cat:"heater", brand:"CENTON", name:"CENTON Tankless Water Heater (Multi-Point) 5.5kW 220V", meta:"Multi-point · 220V", price:24995, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_96_480x480.png?v=1772458530` },
+  // JNOD instant heater (Klimate IG)
+  { id:"jnod-instant", cat:"heater", brand:"JNOD", name:"JNOD Instant Tankless Water Heater", meta:"Wall-mounted · Compact · LCD display", price:21995, badge:"sale", oldPrice:24995, stock:"in", src:"klimate", img:null, ph:"ph-tankless" },
+  // Tank style
+  { id:"komat-tank-30", cat:"heater", brand:"KOMAT", name:"KOMAT 30-Gallon Tank Water Heater", meta:"Glass-lined · 4500W element", price:38995, stock:"in", src:"klimate", img:null, ph:"ph-tankless" },
+  { id:"komat-tank-50", cat:"heater", brand:"KOMAT", name:"KOMAT 50-Gallon Tank Water Heater", meta:"Whole-house · Glass-lined", price:54995, stock:"in", src:"klimate", img:null, ph:"ph-tankless" },
+  // Solar
+  { id:"solar-heater", cat:"heater", brand:"Klimate Solar", name:"Solar Water Heater System (Roof-mount)", meta:"Vacuum-tube collector · Insulated tank", price:0, badge:"new", stock:"quote", src:"klimate", img:null, ph:"ph-tankless" },
+
+  // ========== FANS ==========
+  // Klimate IG SALE fans
+  { id:"jet-stand-18", cat:"fan", brand:"Klimate", name:"18-inch Jet Stream Standing Fan", meta:"Industrial pedestal · 3 speeds", price:15795, badge:"sale", oldPrice:17995, stock:"in", src:"klimate", img:`${C}/files/Untitleddesign_43_480x480.png?v=1751379489` },
+  { id:"table-12",     cat:"fan", brand:"Klimate", name:"12-inch Table Fan", meta:"Compact · Quiet operation", price:5995, badge:"sale", stock:"in", src:"klimate", img:`${C}/files/Untitleddesign_44_480x480.png?v=1751379501` },
+  { id:"duct-vent",    cat:"fan", brand:"Klimate", name:"Duct-Connecting Ceiling Ventilating Fan", meta:"In-line duct fan · Quiet", price:11995, stock:"in", src:"klimate", img:null, ph:"ph-ductfan" },
+  { id:"wall-jet-18",  cat:"fan", brand:"Klimate", name:"18-inch Jet Stream Wall Fan", meta:"Oscillating · Pull-cord control", price:12995, badge:"sale", stock:"in", src:"klimate", img:`${C}/files/WhatsAppImage2026-02-12at1.36.20PM_480x480.jpg?v=1770929672` },
+  { id:"dome-52",      cat:"fan", brand:"Klimate", name:"52-inch Dome Light Ceiling Fan", meta:"5-blade · Dome light", price:19295, stock:"in", src:"klimate", img:`${C}/files/Untitleddesign_43_480x480.png?v=1751379489` },
+  { id:"3lite-52",     cat:"fan", brand:"Klimate", name:"52-inch 3-Light Ceiling Fan", meta:"Wood blades · 3 lights", price:19295, stock:"in", src:"klimate", img:null, ph:"ph-ductfan" },
+  { id:"ind-stand",    cat:"fan", brand:"Klimate", name:"Industrial Standing Fan", meta:"All-metal · High velocity", price:24995, badge:"sale", stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_43_480x480.png?v=1751379489` },
+  { id:"ind-wall-20",  cat:"fan", brand:"Klimate", name:"20-inch High Velocity Wall Fan", meta:"Industrial-grade · Oscillating", price:14995, badge:"sale", stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_44_480x480.png?v=1751379501` },
+  // Carlisa Accutek + Windy fans (real images)
+  { id:"accutek-16-w",  cat:"fan", brand:"Accutek", name:"Accutek 16-inch Standing Fan (White)", meta:"4 reviews · 3 speeds", price:11795, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_43_480x480.png?v=1751379489` },
+  { id:"accutek-16-b",  cat:"fan", brand:"Accutek", name:"Accutek 16-inch Standing Fan (Black)", meta:"3 speeds · Quiet motor", price:11795, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_44_480x480.png?v=1751379501` },
+  { id:"accutek-16-rw", cat:"fan", brand:"Accutek", name:"Accutek 16-inch Standing Fan with Remote (White)", meta:"Remote control · Timer", price:13595, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_44_93730bf7-e484-4bfe-87bd-bc242b43ce7b_480x480.png?v=1751379733` },
+  { id:"accutek-16-w2", cat:"fan", brand:"Accutek", name:"Accutek 16-inch Wall Fan", meta:"Pull-cord · 3 speeds", price:9995, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_43_480x480.png?v=1751379489` },
+  { id:"accutek-16-wr", cat:"fan", brand:"Accutek", name:"Accutek 16-inch Wall Fan with Remote", meta:"Wall-mount · Remote", price:11595, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_44_480x480.png?v=1751379501` },
+  { id:"accutek-18-js", cat:"fan", brand:"Accutek", name:'Accutek 18-inch Standing Fan (Jet Stream)', meta:"4 reviews · High velocity", price:15795, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_44_93730bf7-e484-4bfe-87bd-bc242b43ce7b_480x480.png?v=1751379733` },
+  { id:"windy-20-floor", cat:"fan", brand:"Windy", name:"Windy 20-inch Floor Fan", meta:"Heavy-duty floor circulator", price:7895, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_43_480x480.png?v=1751379489` },
+  { id:"windy-20-hv",    cat:"fan", brand:"Windy", name:"Windy 20-inch High Velocity Floor Fan", meta:"Industrial airflow", price:13995, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_43_480x480.png?v=1751379489` },
+  { id:"windy-20-hv-s",  cat:"fan", brand:"Windy", name:"Windy 20-inch High Velocity Standing Fan", meta:"Adjustable height", price:21995, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_43_480x480.png?v=1751379489` },
+  { id:"windy-20-hv-w",  cat:"fan", brand:"Windy", name:"Windy 20-inch High Velocity Wall Fan", meta:"Wall-mount · Industrial", price:14995, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_44_480x480.png?v=1751379501` },
+  { id:"windy-8-circ",   cat:"fan", brand:"Windy", name:"Windy 8-inch Air Circulator Fan", meta:"Desktop · 8 reviews", price:3395, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_44_480x480.png?v=1751379501` },
+  { id:"windy-5-usb",    cat:"fan", brand:"Windy", name:"Windy 5-inch USB/AA Battery Fan with Timer", meta:"Portable · 3 reviews", price:2195, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_44_480x480.png?v=1751379501` },
+  { id:"windy-18-c",     cat:"fan", brand:"Windy", name:"Windy 18-inch Ceiling Fan", meta:"Compact ceiling", price:13995, stock:"in", src:"carlisa", img:null, ph:"ph-ductfan" },
+  { id:"windy-48-6",     cat:"fan", brand:"Windy", name:"Windy 48-inch Ceiling Fan — 6 Blades", meta:"5 reviews · 6 blades", price:17995, stock:"in", src:"carlisa", img:null, ph:"ph-ductfan" },
+  { id:"windy-52-3",     cat:"fan", brand:"Windy", name:"Windy 52-inch Ceiling Fan — 3 Lights", meta:"With 3 lights · Wood blades", price:19295, stock:"in", src:"carlisa", img:null, ph:"ph-ductfan" },
+  { id:"windy-52-d",     cat:"fan", brand:"Windy", name:"Windy 52-inch Ceiling Fan — Dome Light", meta:"Dome light · 5 blades", price:19295, stock:"in", src:"carlisa", img:null, ph:"ph-ductfan" },
+
+  // ========== EXTRACTOR FANS ==========
+  { id:"ind-extr",      cat:"extractor", brand:"Klimate", name:"Industrial Wall Extractor Fan", meta:"Heavy-duty extractor · Workshop & garage", price:18995, badge:"sale", stock:"in", src:"klimate", img:null, ph:"ph-extractor" },
+  { id:"vent-wall",     cat:"extractor", brand:"Klimate", name:"Wall Ventilation Fan", meta:"Bathroom & utility room ventilation", price:8995, badge:"sale", stock:"in", src:"klimate", img:null, ph:"ph-extractor" },
+  { id:"hi-vel-wall",   cat:"extractor", brand:"Klimate", name:"20-inch High Velocity Wall Fan", meta:"Industrial extraction · Powder-coat steel", price:14995, badge:"sale", stock:"in", src:"klimate", img:null, ph:"ph-extractor" },
+  { id:"windy-exh",     cat:"extractor", brand:"Windy", name:"Windy Downblast Roof Exhaust Fan 0.25kW (Single-Phase)", meta:"Direct-drive roof exhaust", price:0, stock:"out", src:"carlisa", img:`${C}/files/WhatsAppImage2026-02-12at1.36.20PM_480x480.jpg?v=1770929672` },
+  { id:"cel-12",   cat:"extractor", brand:"CEL", name:"CEL Turbine Roof Ventilator 12-inch", meta:"Wind-driven · No power needed", price:28995, stock:"in", src:"carlisa", img:`${C}/files/TRV-12_480x480.png?v=1703079470` },
+  { id:"cel-24",   cat:"extractor", brand:"CEL", name:"CEL Turbine Roof Ventilator 24-inch", meta:"For warehouses · Aluminum", price:57995, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_7d903843-61bf-44fc-aee2-12bd49891c83_480x480.png?v=1703079577` },
+  { id:"cel-35",   cat:"extractor", brand:"CEL", name:"CEL Turbine Roof Ventilator 35-inch", meta:"Heavy industrial · 35 inch", price:72995, stock:"in", src:"carlisa", img:`${C}/files/Untitleddesign_1_c65153ad-92c7-4e56-90ce-0656ce9f9ed2_480x480.png?v=1703079660` },
+  { id:"bath-vent", cat:"extractor", brand:"Klimate", name:"Bathroom Ventilator Fan", meta:"Drop-in ceiling · Quiet operation", price:5995, stock:"in", src:"klimate", img:null, ph:"ph-extractor" },
+
+  // ========== WATER PUMPS ==========
+  { id:"klimate-jet",  cat:"pump", brand:"Klimate", name:"1HP Auto Jet Water Pump", meta:"Self-priming · With pressure tank", price:31995, badge:"sale", stock:"in", src:"klimate", img:`${C}/products/AUTOJET-100P_480x480.jpg?v=1589589661` },
+  { id:"glong-1hp-110", cat:"pump", brand:"Glong", name:"Glong Autojet Water Pump System 1HP (110V)", meta:"2 reviews · Complete system", price:31995, stock:"in", src:"carlisa", img:`${C}/products/AUTOJET-100P_480x480.jpg?v=1589589661` },
+  { id:"glong-1hp-220", cat:"pump", brand:"Glong", name:"Glong Autojet Water Pump System 1HP (220V)", meta:"220V version", price:31995, stock:"in", src:"carlisa", img:`${C}/products/AUTOJET-100P_480x480.jpg?v=1589589661` },
+  { id:"glong-hmp",     cat:"pump", brand:"Glong", name:"Glong HMP-Auto Water Pump System 1HP (110V)", meta:"Complete system · 2 reviews", price:0, stock:"out", src:"carlisa", img:`${C}/products/HMPAUTO15-5M-GF36_480x480.jpg?v=1589589726` },
+  { id:"pedrollo-cp",   cat:"pump", brand:"Pedrollo", name:"Pedrollo CP Centrifugal Pump 1HP", meta:"Italian-made · Heavy-duty centrifugal", price:48995, stock:"in", src:"klimate", img:null, ph:"ph-pump-sub" },
+  { id:"submersible-1", cat:"pump", brand:"Pedrollo", name:"Pedrollo Submersible Borehole Pump 1HP", meta:"4-inch deep well · Stainless body", price:78995, stock:"in", src:"klimate", img:null, ph:"ph-pump-sub" },
+  { id:"submersible-2", cat:"pump", brand:"Pedrollo", name:"Pedrollo Submersible Borehole Pump 2HP", meta:"4-inch · For deep wells", price:118995, stock:"in", src:"klimate", img:null, ph:"ph-pump-sub" },
+  { id:"electric-pump", cat:"pump", brand:"Glong", name:"Glong Electric Booster Pump 0.5HP", meta:"Whole-house pressure boost", price:18995, stock:"in", src:"klimate", img:null, ph:"ph-pump-sub" },
+
+  // ========== GENERATORS ==========
+  { id:"durable-2k",    cat:"gen", brand:"Durable", name:"Durable Gas Generator 2kVA", meta:"Portable · Recoil start", price:0, stock:"out", src:"carlisa", img:`${C}/products/RGE2500X_480x480.jpg?v=1611323857` },
+  { id:"durable-3k",    cat:"gen", brand:"Durable", name:"Durable Gas Generator 3kVA", meta:"For tools & job sites", price:0, stock:"out", src:"carlisa", img:`${C}/products/RGE4000X_480x480.jpg?v=1611325161` },
+  { id:"durable-45k",   cat:"gen", brand:"Durable", name:"Durable Diesel Generator 4.5kVA", meta:"Diesel · Long runtime", price:213995, stock:"in", src:"carlisa", img:`${C}/files/RDE6700TAi_480x480.jpg?v=1733928215` },
+  { id:"ats-45",        cat:"gen", brand:"Durable", name:"Automatic Transfer Switch — 4.5kVA Generator", meta:"Auto-failover for Durable 4.5kVA", price:66995, stock:"in", src:"carlisa", img:`${C}/products/ats_480x480.jpg?v=1623779764` },
+  { id:"pramac-silent-10",  cat:"gen", brand:"PRAMAC", name:"PRAMAC Silent Diesel Generator 10kVA", meta:"Italian-made · Silent canopy", price:0, badge:"new", stock:"quote", src:"carlisa", img:`${C}/files/RDE6700TAi_480x480.jpg?v=1733928215` },
+  { id:"pramac-silent-25",  cat:"gen", brand:"PRAMAC", name:"PRAMAC Silent Diesel Generator 25kVA", meta:"Commercial standby", price:0, stock:"quote", src:"carlisa", img:`${C}/files/RDE6700TAi_480x480.jpg?v=1733928215` },
+  { id:"powerlink-50",  cat:"gen", brand:"Powerlink", name:"Powerlink Diesel Generator 50kVA", meta:"Industrial 3-phase", price:0, stock:"quote", src:"carlisa", img:`${C}/files/RDE6700TAi_480x480.jpg?v=1733928215` },
+
+  // ========== TANKS ==========
+  { id:"gws-50",   cat:"tank", brand:"Global Water Solutions", name:"GWS Pressure Tank 50L", meta:"Pre-charged · Diaphragm type", price:24995, stock:"in", src:"klimate", img:null, ph:"ph-tank" },
+  { id:"gws-100",  cat:"tank", brand:"Global Water Solutions", name:"GWS Pressure Tank 100L", meta:"Whole-house pressure tank", price:38995, stock:"in", src:"klimate", img:null, ph:"ph-tank" },
+  { id:"glong-pt", cat:"tank", brand:"Glong", name:"Glong Pressure Tank 24L", meta:"Compact · For booster systems", price:14995, stock:"in", src:"klimate", img:null, ph:"ph-tank" },
+  { id:"watertank-400", cat:"tank", brand:"Klimate", name:"Polyethylene Water Tank — 400 Gal", meta:"UV-stabilized · 400-gallon", price:38995, stock:"in", src:"klimate", img:null, ph:"ph-tank" },
+  { id:"watertank-650", cat:"tank", brand:"Klimate", name:"Polyethylene Water Tank — 650 Gal", meta:"For homes · 650-gallon", price:48995, stock:"in", src:"klimate", img:null, ph:"ph-tank" },
+
+  // ========== AIR CURTAINS / COOLERS ==========
+  { id:"ac-curtain-90",  cat:"curtain", brand:"Klimate", name:"Air Curtain — 36 inch (90cm)", meta:"Storefront entry barrier", price:32995, stock:"in", src:"klimate", img:null, ph:"ph-vrf" },
+  { id:"ac-curtain-120", cat:"curtain", brand:"Klimate", name:"Air Curtain — 48 inch (120cm)", meta:"Restaurants & commercial doors", price:42995, stock:"in", src:"klimate", img:null, ph:"ph-vrf" },
+  { id:"air-cooler-60",  cat:"curtain", brand:"Klimate", name:"Industrial Evaporative Air Cooler 60L", meta:"Movable · For warehouses", price:62995, stock:"in", src:"klimate", img:null, ph:"ph-extractor" },
+  { id:"air-cooler-100", cat:"curtain", brand:"Klimate", name:"Industrial Evaporative Air Cooler 100L", meta:"For factories & open spaces", price:88995, stock:"in", src:"klimate", img:null, ph:"ph-extractor" },
+
+  // ========== WATER PURIFICATION ==========
+  { id:"ro-undersink", cat:"purify", brand:"Klimate", name:"Reverse Osmosis Under-Sink System (5-Stage)", meta:"5-stage filtration · Drinking water", price:32995, stock:"in", src:"klimate", img:null, ph:"ph-tankless" },
+  { id:"whole-house",  cat:"purify", brand:"Klimate", name:"Whole-House Sediment & Carbon Filter", meta:"Big-blue housing · Pre-filtration", price:18995, stock:"in", src:"klimate", img:null, ph:"ph-tankless" },
+  { id:"uv-purify",    cat:"purify", brand:"Klimate", name:"UV Water Sterilizer 12 GPM", meta:"Kills bacteria & viruses", price:42995, stock:"in", src:"klimate", img:null, ph:"ph-tankless" },
+
+  // ========== BLENDERS ==========
+  { id:"jtc-3hp",  cat:"blender", brand:"JTC Omni-Blend", name:"JTC Omni-Blend V Commercial Blender 3HP", meta:"Bars & juice shops · Variable speed", price:64995, stock:"in", src:"carlisa", img:null, ph:"ph-mizer" },
+  { id:"jtc-tm800",cat:"blender", brand:"JTC Omni-Blend", name:"JTC Omni-Blend TM-800 Commercial Blender", meta:"Pre-set programs · 64-oz jar", price:54995, stock:"in", src:"carlisa", img:null, ph:"ph-mizer" },
+  { id:"scott-bld",cat:"blender", brand:"Scott", name:"Scott Personal Blender", meta:"Compact · Two travel cups", price:7995, stock:"in", src:"carlisa", img:null, ph:"ph-mizer" },
+];
+
+const fmt = n => "$" + n.toLocaleString("en-JM");
+
+const grid   = document.getElementById("prodGrid");
+const search = document.getElementById("searchInput");
+const sortSel= document.getElementById("sortSel");
+const cntT   = document.getElementById("countText");
+const empty  = document.getElementById("empty");
+const fSale = document.getElementById("filterSale");
+const fNew  = document.getElementById("filterNew");
+const fStock= document.getElementById("filterStock");
+const fInv  = document.getElementById("filterInverter");
+
+let activeCat = "all";
+
+function imgHtml(p){
+  if(p.img){
+    return `<img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling&&(this.nextElementSibling.style.display='block')"/>
+            <svg style="display:none;width:62%;height:62%;opacity:.85"><use href="#${p.ph||'ph-vrf'}"/></svg>`;
+  }
+  return `<svg><use href="#${p.ph||'ph-vrf'}"/></svg>`;
+}
+
+function badgeHtml(p){
+  const arr = [];
+  if(p.badge==="sale" || p.oldPrice) arr.push(`<span class="badge sale">Sale</span>`);
+  if(p.badge==="new") arr.push(`<span class="badge new">New</span>`);
+  if(p.badge==="exclusive") arr.push(`<span class="badge exclusive">Klimate Exclusive</span>`);
+  if(p.stock==="out") arr.push(`<span class="badge sold">Sold Out</span>`);
+  return arr.length ? `<div class="badges">${arr.join("")}</div>` : "";
+}
+
+function stockHtml(p){
+  if(p.stock==="in")    return `<span class="stock">In stock</span>`;
+  if(p.stock==="quote") return `<span class="stock out" style="color:#0f4ea8">Quote on request</span>`;
+  return `<span class="stock out">Out of stock</span>`;
+}
+
+function priceHtml(p){
+  if(p.price && p.price>0){
+    const old = p.oldPrice ? `<small style="text-decoration:line-through;margin-right:6px;color:#a3acba">${fmt(p.oldPrice)}</small>`:"";
+    return `<span class="price">${old}${fmt(p.price)} <small>JMD</small></span>`;
+  }
+  return `<span class="price" style="color:var(--blue-700)">Get Quote</span>`;
+}
+
+function actionHtml(p){
+  const w = `https://wa.me/18768748675?text=${encodeURIComponent("Hi Klimate, I'd like info on: "+p.name)}`;
+  if(p.stock==="quote"){
+    return `<div class="actions"><a class="qbtn" href="index.html#contact"><svg width="14" height="14"><use href="#ic-mail"/></svg> Request Quote</a><a class="wbtn" href="${w}" aria-label="WhatsApp"><svg width="16" height="16"><use href="#ic-wa"/></svg></a></div>`;
+  }
+  if(p.stock==="out"){
+    return `<div class="actions"><a class="qbtn" style="background:#7d859b" href="${w}">Notify When Available</a><a class="wbtn" href="${w}" aria-label="WhatsApp"><svg width="16" height="16"><use href="#ic-wa"/></svg></a></div>`;
+  }
+  return `<div class="actions"><a class="qbtn" href="${w}"><svg width="14" height="14"><use href="#ic-cart"/></svg> Add to Quote</a><a class="wbtn" href="${w}" aria-label="WhatsApp"><svg width="16" height="16"><use href="#ic-wa"/></svg></a></div>`;
+}
+
+function cardHtml(p){
+  return `
+    <article class="prod" data-cat="${p.cat}">
+      ${badgeHtml(p)}
+      <button class="prod-fav" aria-label="Save"><svg width="16" height="16"><use href="#ic-heart"/></svg></button>
+      <div class="img${p.img?'':' placeholder'}">${imgHtml(p)}</div>
+      <div class="info">
+        <span class="brand">${p.brand}</span>
+        <h3 class="name">${p.name}</h3>
+        <p class="meta">${p.meta||""}</p>
+        <div class="price-row">${priceHtml(p)}${stockHtml(p)}</div>
+        ${actionHtml(p)}
+      </div>
+    </article>`;
+}
+
+function getFiltered(){
+  const q = (search.value||"").trim().toLowerCase();
+  let list = PRODUCTS.filter(p=>{
+    if(activeCat!=="all" && p.cat!==activeCat) return false;
+    if(fSale.checked && !(p.badge==="sale"||p.oldPrice)) return false;
+    if(fNew.checked  && p.badge!=="new") return false;
+    if(fStock.checked&& p.stock!=="in") return false;
+    if(fInv.checked  && !(p.cat==="ac" && p.inverter)) return false;
+    if(q){
+      const hay = (p.name+" "+p.brand+" "+p.meta+" "+p.cat).toLowerCase();
+      if(!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  const s = sortSel.value;
+  if(s==="az") list.sort((a,b)=>a.name.localeCompare(b.name));
+  if(s==="za") list.sort((a,b)=>b.name.localeCompare(a.name));
+  if(s==="lo") list.sort((a,b)=>(a.price||9e9)-(b.price||9e9));
+  if(s==="hi") list.sort((a,b)=>(b.price||0)-(a.price||0));
+  if(s==="new") list.sort((a,b)=>(b.badge==="new"?1:0)-(a.badge==="new"?1:0));
+  return list;
+}
+
+function render(){
+  const list = getFiltered();
+  grid.innerHTML = list.map(cardHtml).join("");
+  cntT.textContent = list.length===PRODUCTS.length
+    ? `Showing all ${list.length} products`
+    : `Showing ${list.length} of ${PRODUCTS.length} products`;
+  empty.style.display = list.length ? "none" : "block";
+  grid.style.display  = list.length ? "" : "none";
+}
+
+function updateCounts(){
+  document.querySelectorAll("[data-count]").forEach(el=>{
+    const c = el.getAttribute("data-count");
+    const n = c==="all" ? PRODUCTS.length : PRODUCTS.filter(p=>p.cat===c).length;
+    el.textContent = n;
+  });
+}
+
+document.getElementById("catList").addEventListener("click", e=>{
+  const b = e.target.closest("button[data-cat]");
+  if(!b) return;
+  document.querySelectorAll("#catList button").forEach(x=>x.classList.remove("active"));
+  b.classList.add("active");
+  activeCat = b.getAttribute("data-cat");
+  history.replaceState(null,"", activeCat==="all" ? "shop.html" : "shop.html#"+activeCat);
+  render();
+  window.scrollTo({top:document.querySelector(".shop-wrap").offsetTop-80, behavior:"smooth"});
+});
+
+[search, sortSel, fSale, fNew, fStock, fInv].forEach(el=>{
+  el.addEventListener("input", render);
+  el.addEventListener("change", render);
+});
+
+// open from hash (e.g. shop.html#ac)
+(function initFromHash(){
+  const h = location.hash.replace("#","");
+  if(h){
+    const btn = document.querySelector(`#catList button[data-cat="${h}"]`);
+    if(btn) btn.click();
+  }
+})();
+
+updateCounts();
+render();
+</script>
+</body>
+</html>
